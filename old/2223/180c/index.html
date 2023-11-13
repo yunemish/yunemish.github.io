@@ -1,0 +1,776 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta charset="utf-8">
+     <title>Math 180C - Introduction to Stochastic Processes II </title>
+<!--     <link href="style.css" rel="stylesheet" type="text/css"> -->
+   </head>
+   <body bgcolor="lightgrey">
+     <!-- This "container" controls the flow of the layout -->
+     <div id="container">
+        <a name="top"><h1 class="heading">Math 180C - Introduction to Stochastic Processes II - Spring 2023</h1></a>
+        <h2 class="heading">Lecture B00: CENTR 109, MWF, 4-4:50 PM </h2>
+<!--	<h2 class="heading">Important: This web site is under construction and will be ready before September 29.</h2>
+	<h2>Please wait until September 29 and check this web site for the course related information before contacting the instructor directly.</h2> -->
+		
+		
+		
+		
+        <!-- ***********************************************************************
+         *                          MAIN MENU 
+         * -------------------------------------------------------------------------
+         * Notes: 1. To add a new menu item add:
+         *           <li><a href="menuItemLink">Menu Item Name</a></li>
+         *           after the last menu item in the list.
+         *        2. If you've made a new announcement and you want the menu to 
+         *           reflect that, replace 
+         *           <li><a href="#announcements">Announcements</a></li>
+         *           with 
+         *           <li class="new"><a href=#announcements">Announcements</a></li>
+         *************************************************************************-->
+        <ul id="nav">
+		   <li><a href="#announcements">Announcements</a></li>
+		   <li><a href="#calendar">Calendar</a></li>
+           <li><a href="#syllabus">Syllabus</a></li>
+           <li><a href="https://piazza.com/ucsd/spring2023/math180c/home" target="_blank" title="Discussion forum for Q&A">Piazza</a></li>
+           <li><a href="http://www.gradescope.com" target="_blank">Gradescope</a></li>
+           <li><a href="#homework">Homeworks</a></li>
+        </ul><!-- End nav unordered list -->
+
+		
+		
+		
+        <!-- ***********************************************************************
+         *                          LAST MODIFIED
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+ 	<!--       <p class="lastMod">Last Modified: 9/23/15</p>		-->
+ 	
+
+
+        <!-- ***********************************************************************
+         *                    ANNOUNCEMENTS
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+		<div id="middle" class="clearer">
+           <a name="announcements"><h3>Announcements</h3></a>
+           
+		<p>
+		  <ul>
+		    <li>June 21:
+		      <ul>
+			<li>The <b>final exam</b> has been graded. The regrades will be active on Piazza until <b>Saturday, June 24, 11 PM</b>. If needed your letter grade for the course will be updated after the regrade.</li>
+			<li><b>Solutions</b> to the final exam can be downloaded <a href="s23_180c_final_SOLUTIONS.pdf">here</a>.</li>
+			<li>Updated <b>grading scale</b>:
+			<center>        
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="tableBody"><b>A+</b></td>
+<td class="tableBody"><b>A</b></td>
+<td class="tableBody"><b>A-</b></td>
+<td class="tableBody"><b>B+</b></td>
+<td class="tableBody"><b>B</b></td>
+<td class="tableBody"><b>B-</b></td>
+<td class="tableBody"><b>C+</b></td>
+<td class="tableBody"><b>C</b></td>
+<td class="tableBody"><b>C-</b></td>
+
+</tr>
+<tr>
+<td class="tableBody"><b>95</b></td>
+<td class="tableBody"><b>92</b></td>
+<td class="tableBody"><b>85</b></td>
+<td class="tableBody"><b>82</b></td>
+<td class="tableBody"><b>79</b></td>
+<td class="tableBody"><b>74</b></td>
+<td class="tableBody"><b>70</b></td>
+<td class="tableBody"><b>63</b></td>
+<td class="tableBody"><b>50</b></td>
+
+</tr>
+</tbody>       
+</table>
+</center>
+</li>
+		    </ul></li>
+		    <li>June 11: Solutions to <b>Homework 8</b> can be downloaded <a href="180c_hw8_SOLUTIONS.pdf">here</a>;</li>
+		    <li>June 9:
+		      <ul>
+			 <li><b>Final exam</b> will take place on Thursday, June 15, 3 - 6 PM in CENTR 109. 
+			   <ul>
+			     <li>Final exam will cover the material of the entire course (lectures 1 - 27).</li>
+			     <li><b>Practice final</b> is available <a href="./s23_180c_practiceFinal.pdf">here</a> / <a href="s23_180c_practiceFinal_SOLUTIONS.pdf">solutions</a>.</li>
+			     <li>Final exam will consist of 8 problems. The first 7 problems will be similar to midterm/practice/homework problems or examples from lectures/textbook, mostly computational in nature. The last problem will be theoretical (e.g., prove certain statement/result using the provided hints). All problems will have the same weight.</li>
+			     <li>Office hours schedule for the finals week:
+			       <ul>
+				 <li>Tuesday, June 13, 4 - 6 PM(APM 6321).</li>
+				 <li>Wednesday, June 14, 11 AM - 1 PM (APM 6321).</li>
+			     </ul></li>
+			<li>the seats have been <b>randomly assigned</b> to the students enrolled in this course. In order to find out your seat, go to this <a href="./final_seats/index.html">web page</a> and enter your student ID. Please take it seriously, if you are caught sitting in the wrong seat, you will lose the opportunity to drop one of the homeworks when computing your final grade;</li>
+			<li>if you prefer a left-handed seat, send me an email before Tuesday, June 13, 10 AM; it may happen that not all requests for left- or right-handed seats will be accommodated;</li>
+			<li>you are allowed to bring <b>two</b> standard (A4 or 8.5x11) sheet with <b>handwritten</b> notes on both sides; no other notes or books are allowed; no use of electronic devices of any kind (phones, smart watches, tablets, calculators) is allowed; your notes should not contain solutions to homework, practice or other problems not presented during the lectures; write your name and student ID on the sheet with your notes; hand in the sheet with your notes together with your exam; </li>
+			<li>write all your solutions on the exam paper; do not remove any pages from the exam; have your student ID with you during the exam.</li>
+		    </ul></li>
+			<li>Solutions to <b>Midterm 2</b> can be downloaded <a href="./s23_180c_midterm2_SOLUTIONS.pdf">here</a>.</li>
+		      </ul>
+		    </li>
+		    <li>June 8: Update to the homework grading policy. <b>Two</b> lowest graded homework assignement will be dropped when computing the final score. This only concerns the graded assingments, i.e., homework assignemnts 1 - 8.</li>
+		    <li>June 5: <b>Homework 9</b> has been posted <a href="#homework">below</a>. <b>You do not have to turn Homework 9 in</b>. Solutions to Homework 9 are available <a href="180c_hw9_SOLUTIONS.pdf">here</a>.</li>
+		    <li>June 3: <b>Homework 8</b> has been posted <a href="#homework">below</a>. Due: Friday, June 9 via Gradescope.</li>
+		    <li>May 27: <b>Homework 7</b> has been posted <a href="#homework">below</a>. Due: Friday, June 2 via Gradescope.</li>
+		    <li>May 23: Solutions to Homework 6 can be downloaded <a href="180c_hw6_SOLUTIONS.pdf">here</a>;</li>
+		    <li>May 19: <b>Midterm 2</b> will take place on Wednesday, May 24, 4 - 4:50 PM at CENTR 109 (during the lecture). Midterm 2 will cover the material of lectures 11 - 20.
+		      <ul>
+			<li><b>Practice midterm 2</b> is available <a href="./s23_180c_pm2.pdf">here</a> / <a href="s23_180c_pm2_SOLUTIONS.pdf">solutions</a>;</li>
+			<li>there will be office hours on Tuesday, May 23, 2:30 - 4 PM and 5 - 6:30 PM (APM 6321); there will be no office hours on Wednesday, May 24;</li>
+			<li>the seats have been <b>randomly assigned</b> to the students enrolled in this course. In order to find out your seat, go to this <a href="./m2seats/index.html">web page</a> and enter your student ID. Please take it seriously, if you are caught sitting in the wrong seat, you will lose the opportunity to drop one of the homeworks when computing your final grade;</li>
+			<li>if you prefer a left-handed seat, send me an email before Tuesday, May 23, 10 AM; it may happen that not all requests for left- or right-handed seats will be accommodated;</li>
+			<li>you are allowed to bring one standard (A4 or 8.5x11) sheet with <b>handwritten</b> notes on both sides; no other notes or books are allowed; no use of electronic devices of any kind (phones, smart watches, tablets, calculators) is allowed; your notes should not contain solutions to homework, practice or other problems not presented during the lectures; write your name and student ID on the sheet with your notes; hand in the sheet with your notes together with your exam; </li>
+			<li>write all your solutions on the exam paper; do not remove any pages from the exam; have your student ID with you during the exam.</li>
+		    </ul></li>
+		    <li>May 17: The submission deadline for <b>Homework 6</b> has been changed to <b>Monday, May 22</b>. For problem 6 in Homework 6 (Problem 7.4.2 from Pinsky-Karlin), you will get a full credit in you estimate the linear part of M(t) up to an interval of length one, i.e., if you find A and D such that  M(t) - A t is in the interval [D + o(1), D + 1 + o(1)] for large t. If you find the exact value of B such that M(t) - A t = B + o(1), you get <b>extra 4 points</b>.</li>
+		    <li>May 12: <b>Homework 6</b> has been posted <a href="#homework">below</a>. Due: Friday, May 19 via Gradescope.</li>
+		    <li>May 10: Solutions to Midterm 1 can be downloaded <a href="./s23_180c_midterm1_SOLUTIONS.pdf">here</a>.</li>
+		    <li>May 7: <b>Homework 5</b> has been posted <a href="#homework">below</a>. Due: Friday, May 12 via Gradescope.</li>
+		    <li>April 29: <b>Homework 4</b> has been posted <a href="#homework">below</a>. Due: Friday, May 5 via Gradescope.</li>
+		    <li>April 25: <b>Midterm 1</b> will take place on Friday, April 28, 4 - 4:50 PM at CENTR 109 (during the lecture).
+		      <ul>
+			<li>the seats have been <b>randomly assigned</b> to the students enrolled in this course. In order to find out your seat, go to this <a href="./m1seats/index.html">web page</a> and enter your student ID. Please take it seriously, if you are caught sitting in the wrong seat, you will lose the opportunity to drop one of the homeworks when computing your final grade;</li>
+			<li>if you prefer a left-handed seat, send me an email before Thursday, April 27, 10 AM; there are 147 seats in the lecture room and 147 students enrolled in this class, therefore, it may happen that not all requests for left- or right-handed seats will be accommodated;</li>
+<li>you are allowed to bring one standard (A4 or 8.5x11) sheet with <b>handwritten</b> notes on both sides; no other notes or books are allowed; no use of electronic devices of any kind (phones, smart watches, tablets, calculators) is allowed; your notes should not contain solutions to homework, practice or other problems not presented during the lectures; write your name and student ID on the sheet with your notes; hand in the sheet with your notes together with your exam; </li>
+<li>write all your solutions on the exam paper; do not remove any pages from the exam.</li>
+		    </ul></li>
+		    <li>April 24: <b>Practice midterm 1</b> is available <a href="./s23_180c_pm1.pdf">here</a> / <a href="s23_180c_pm1_SOLUTIONS.pdf">solutions</a>.</li>
+		    <li>April 22:
+		      <ul><li><b>Homework 3</b> has been posted <a href="#homework">below</a>. Due: <b>Saturday</b>, April 29 via Gradescope.</li>
+			<li><b>Homework 1</b> has been graded. <b>Regrades</b> are open on Gradescope until Sunday, April 30.</li>
+		    </ul></li>
+		    <li>April 15: <b>Homework 2</b> has been posted <a href="#homework">below</a>. Due: Friday, April 21 via Gradescope.</li>
+		    <li>April 12: <b>Important date change</b>: <b>Midterm 1</b> will take place on <b>Friday, April 28</b>.</li>
+		    <li>April 7: <b>Homework 1</b> has been posted <a href="#homework">below</a>. Due: Friday, April 14 via Gradescope.</li>
+		    <li>April 4:
+		      <ul>
+			<li><b>Important</b>: you have to fill in the Canvas Quiz called “First Day Survey…” before the end of week 2</li>
+			<li>the lectures will be podcasted starting tomorrow (Wednesday, April 5)</li>
+			<li>the office hours schedule has been updated (see <a href="#officehours">below)</a></li>
+			<li>if you want to write the final exam during week 9 due to summer internships, let me know by the end of week 5; notice that in this case the final exam, even if written during week 9, will cover the material of the entire course, so you will have to learn the last few topics by yourself; you will also have to submit all the homework assignments (or lose points for not submitting)</li>
+</ul></li>
+		    <li>April 2: Welcome to MATH 180C: Introduction to Stochastic Processes II!</li>
+<!--		<li>New homework problem sheet available now! See below</li>--><br>
+		</ul> 
+	    </p>
+
+ 		<a name="information"><h3>Course Information</h3></a>
+ 		<p>
+ 		<ul>
+		  <li><h8>Textbooks</h8>: 
+		    
+		    <ul>
+		      <li>The required textbook for this course is 
+		<br><br>
+		<center><span style="font-size:19px"><i><a href="https://search-library.ucsd.edu/permalink/01UCS_SDI/ld412s/alma991007909979706535">An Introduction to Stochastic Modeling</a></i>, by Mark A. Pinsky and Samuel Karlin; 4th edition</center>
+
+		<br>
+		Reading and homework assignments will refer to this textbook as <i>PK</i>.</li>
+		      <li>For certain selected topics of this course we will additionally use the following textbook
+		<br><br>
+		<center><span style="font-size:19px"><i><a href="https://search-library.ucsd.edu/permalink/01UCS_SDI/ld412s/alma9914833352506531">Essentials of stochastic processes</a></i>, by Richard Durrett; 3rd edition</center>
+		<br>
+		Reading and homework assignments will refer to this textbook as <i>Durrett</i>.<br></li>
+		      <li>		The links above go to UCSD library website, where the textbooks can be downloaded freely and legally if you are connecting from a UCSD IP address.</li>
+		      </ul>
+				</li><br>
+		
+		<li><h8>Coursework</h8>: There will be
+		  <ul> <li style="margin-top: 5px;"><b>homework</b> assignments due roughly every week, typically on Fridays (starting in Week 2); they are posted <a href="#homework">below</a>;</li>
+		    <li style=" margin-top: 5px;">two <b>midterm exams</b> on Weeks 4 and 8;</li>
+		    <li style=" margin-top: 5px; margin-bottom: 5px;">and a <b>final exam</b>.</li>
+		    </ul>		  
+		</li><br>
+		
+		<li><h8><a href="https://piazza.com/ucsd/spring2023/math180c/home" target="_blank">Piazza</a></h8> is an online discussion forum. It will allow you to post messages (openly or anonymously) and answer posts made by your
+		  fellow students, about course content, homework, exams, etc.  The instructors and TAs will also monitor and post to Piazza regularly.
+		  <ul>
+		  <li>For all questions related to the course, <b>ask your questions on Piazza</b>  before contacting the instructor/TAs directly.</li>
+		    <li>You can sign up <a href="https://piazza.com/ucsd/spring2023/math180c" target="_blank">here</a>.</li>
+		  <li> <b>Note:</b> Piazza
+		has an opt-in "Piazza Careers" section which, if you give permission, will share statistics about your Piazza use with
+		potential future employers.  It also has a "social network" component, based on other students who've shared a Piazza-based
+		class with you, that comes with the usual warnings about privacy concerns. Piazza is fully FERPA compliant, and is an allowed resource
+		   at UCSD.  Nevertheless, you are not required to use Piazza if you do not wish.</li></ul>
+		</li><br>
+		
+		
+		<li><h8>Gradescope</h8> is an online tool for uploading and grading assignments and exams (it is now under the umbrella of Turnitin).  You will
+		  turn in your homework through Gradescope, and you will access your graded exams there as well.
+		  Access the class Gradescope site <a href="http://www.gradescope.com" target="_blank">here</a> or using the Canvas app.
+		</li><br>
+
+		<li><a href="https://canvas.ucsd.edu/">Canvas</a> is a learning management system (LMS) used by UCSD. We will use Canvas for sharing certain course materials. Make sure that you have acces to the MATH 180C course.</li>
+
+		</ul>
+		</p>
+
+
+
+		</div>
+
+        <!-- ***********************************************************************
+         *                          INSTRUCTOR INFROMATION
+         * -------------------------------------------------------------------------
+         * Notes: 1. This section contains information about how to contact the 
+         *           Professor. 
+         *************************************************************************-->
+		<div id="instructor1">
+	        <h3><a name="officehours">Instructional Staff and Office Hours</a></h3>
+		</div>
+
+            <table class="bordered">
+               <tbody><tr class="tableHeading"><td>Name</td><td>&emsp;Role</td><td>&emsp;Office</td><td>&emsp;E-mail</td><td>&emsp;Office hours</td></tr>
+               <tr><td class="tableHeading"><a href="http://www.math.ucsd.edu/~ynemish" target="_blank">Yuriy Nemish</a></td>
+                   <td>&emsp;Instructor</td>
+                   <td>&emsp;AP&amp;M 6321</td>
+                 <td>&emsp;<a href="mailto:ynemish@ucsd.edu">ynemish@ucsd.edu</a></td>
+		 <td><ul><li>Wednesday 2:30 - 3:30 PM</li>
+		     <li>Wednesday 5 - 7 PM</li>
+		 </td></tr>
+               <tr><td class="tableHeading">Sheng Qiao</td>
+                   <td>&emsp;Teaching Assistant</td>
+                   <td>&emsp;HSS 5056</td>
+                 <td>&emsp;<a href="mailto:sqiao@ucsd.edu">sqiao@ucsd.edu</a></td>
+		 <td><ul><li>Thursday 4 - 6 PM</li>
+		     <li>Thursday 6 - 7 PM (remote <a href="https://ucsd.zoom.us/j/91714532114">zoom link</a>)</li>
+		 </ul></td></td>
+	       </tr>
+               <tr><td class="tableHeading">Yubo Shuai</td>
+                   <td>&emsp;Teaching Assistant</td>
+                   <td>&emsp;HSS 4012</td>
+                 <td>&emsp;<a href="mailto:yushuai@ucsd.edu">yushuai@ucsd.edu</a></td>
+		 <td><ul><li>Tuesday 2 - 4 PM</li>
+		     <li>Thursday 3 - 4 PM</li>
+		 </ul></td></td>
+	       </tr>
+            </tbody></table><!-- End table containing contact info -->
+
+      
+        <div id="middle">
+        <br>
+
+
+            <!-- Class Meeting Information-->
+            <a name="meetings"><h3>Class Meetings</h3></a>
+            <table class="bordered">
+               <tbody><tr class="tableHeading"><td></td><td>&emsp;Date</td><td>&emsp;Time</td><td>&emsp;Location</td></tr>
+               <!-- The lecture date, time, and location -->
+               <tr><td class="tableHeading">Lectures (YN)</td>
+                   <td>&emsp;Monday, Wednesday, Friday</td><td>&emsp;4:00 - 4:50 PM</td><td>&emsp;CENTR 109</td></tr>
+               <!-- The discussion date, time, and location -->
+               <tr><td class="tableHeading">Discussion B01 (Qiao)</td>
+                   <td>&emsp;Thursday</td><td>&emsp;2:00 - 2:50 PM </td><td>&emsp;AP&amp;M 2301</td></tr>
+               <tr><td class="tableHeading">Discussion B02 (Qiao)</td>
+                   <td>&emsp;Thursday</td><td>&emsp;3:00 - 3:50 PM</td><td>&emsp;AP&amp;M B402A</td></tr>
+               <tr><td class="tableHeading">Discussion B03 (Shuai)</td>
+                   <td>&emsp;Thursday</td><td>&emsp;1:00 - 1:50 PM </td><td>&emsp;AP&amp;M 2402</td></tr>
+               <tr><td class="tableHeading">Discussion B04 (Shuai)</td>
+                   <td>&emsp;Thursday</td><td>&emsp;2:00 - 2:50 PM</td><td>&emsp;HSS 4025</td></tr>
+               </tbody></table><!-- End table containing class meeting info -->
+
+
+
+	        <div id="middle">
+        <br>
+
+
+            <!-- Class Meeting Information-->
+            <a name="dates"><h3>Important dates</h3></a>
+            <table class="bordered">
+              <tbody><tr class="tableHeading"><td></td><td>Week</td><td>&emsp;Date</td><td>&emsp;Time</td><td>&emsp;Location</td></tr>
+		<!-- The exam date, time, and location -->
+		<tr><td class="tableHeading">Midterm Exam 1</td>
+                  <td style="text-align:center">4</td><td>&emsp;<b>Friday, April 28</b></td><td>&emsp;4-4:50 PM</td><td>&emsp;CENTR 109</td></tr>
+		<tr><td class="tableHeading">Midterm Exam 2</td>
+                  <td style="text-align:center">8</td><td>&emsp;<b>Wednesday, May 24</b></td><td>&emsp;4-4:50 PM</td><td>&emsp;CENTR 109</td></tr>
+		<tr><td class="tableHeading">Final Exam</td>
+                  <td>Finals</td><td>&emsp;<b>Thursday, June 15</b></td><td>&emsp;<b>3-6 PM</b></td><td>&emsp;TBA</td></tr>
+            </tbody></table><!-- End table containing class meeting info -->
+
+
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+
+	</div>
+
+	    
+
+        <div id="welcomeMsg">
+	<!-- ><p>We will be communicating with you and making announcements through an online question and answer 
+	platform called 
+        <a href="http://www.piazza.com/ucsd/winter2016/math180a/home" target="_blank" title="Discussion forum for Q&A">Piazza</a> (sign up link:
+        <a href="http://www.piazza.com/ucsd/winter2016/math180a">piazza.com/ucsd/winter2016/math180a</a>).
+	We ask that when you have a question about the class that might be relevant to other students, 
+	you post your question on Piazza instead of emailing us. That way, everyone can benefit from the response.
+	Posts about homework or exams on Piazza should be content based.  While you are encouraged to crowdsource and discuss coursework through
+	Piazza, please do not post complete solutions to homework problems there.  Questions about grades should be brought to the instructors,
+	in office hours.  You can also post private messages to instructors on Piazza, which we prefer to email. 
+	</p> -->
+	<br>
+	<p>Please, check the following calendar for possible reschedulings of the office hours.</p>
+
+
+        <!-- ***********************************************************************
+         *                          CALENDAR LINK
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+
+
+		<a name="calendar"><h3>Calendar</h3></a>
+
+		<br>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_12c2164a29839d5880da7c1c2c23db0fa71d119e9fa7d32887d325c97119fa6f%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+</div>
+
+        <!-- ***********************************************************************
+         *                 CLASS MEETINGS
+         * -------------------------------------------------------------------------
+         * Notes: 1. The class bordered adds a border around the table, if you don't
+         *           like it replace <table class="bordered"> with <table>
+         *        2. When editing the headings, be careful not to accidentally 
+         *           delete a <td> or a </td> tag!
+         *************************************************************************-->
+      
+
+      
+
+
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+
+	</div>
+
+
+
+	
+
+	<!-- ***********************************************************************
+         *                    CLASS INFORMATION
+         * -------------------------------------------------------------------------
+         * Notes: 1. This section includes: 
+         *          I.   Welcome Message
+         *          II.  Course Description
+         *          III. Learning goals
+	 *	    IV.  Grading 
+         *          V.  Regrades and accommodations.
+         *          VI.   Academic Integrity
+         *        2. Do not delete the <br/><br/> when editing the text!
+         *************************************************************************-->
+        <div id="welcomeMsg">
+             <a name="syllabus"><h3>Syllabus</h3></a>
+	     <br>
+
+	                  <p>Welcome to Math 180C: a one quarter course introduction to stochastic processes (II).
+	       According to the UC San Diego
+             <a href="http://ucsd.edu/catalog/courses/MATH.html" target="_blank">Course Catalog</a>, the topics covered are Markov chains in discrete and continuous time, random walk, recurrent events and other topics.</p>
+             
+             <p>Here is a more detailed listing of course topics, in the sequence they will be covered, together with the relevant section(s) of the
+               textbook.  While each topic corresponds to approximately one lecture, there will be some give and take here.
+	       This is a rough schedule that will be updated during the term.
+             
+               <table class="bordered">
+              <tr><th>Date</th><th>Week</th><th>Topic</th><th>PK</th><th>Durrett</th><th>Pre-lecture slides</th><th>Post-lecture slides</th><th>Additional videos</th></tr>
+              <tr><td class="tableHeading">4/3</td><td align="center">1</td>
+                <td>Administrivia. Birth processes</td>
+		<td>&emsp;6.1</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l1_e.pdf" target="_blank">Lecture 1</a></td>
+			<td>&emsp;<a href="./180c_l1_a.pdf" target="_blank">Lecture 1</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/5</td><td align="center">1</td>
+                <td>Birth processes</td>
+		<td>&emsp;6.1</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l2_e.pdf" target="_blank">Lecture 2</a></td>
+		<td>&emsp;<a href="./180c_l2_a.pdf" target="_blank">Lecture 2</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/7</td><td align="center">1</td>
+                <td>Birth and death processes</td>
+		<td>&emsp;6.2 - 6.3</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l3_e.pdf" target="_blank">Lecture 3</a></td>
+		<td>&emsp;<a href="./180c_l3_a.pdf" target="_blank">Lecture 3</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/10</td><td align="center">2</td>
+                <td>Birth and death processes</td>
+		<td>&emsp;6.2 - 6.3</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l4_e.pdf" target="_blank">Lecture 4</a></td>
+		<td>&emsp;<a href="./180c_l4_a.pdf" target="_blank">Lecture 4</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/12</td><td align="center">2</td>
+                <td>Strong Markov property. Hitting probabilities</td>
+		<td>&emsp;6.5</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l5_e.pdf" target="_blank">Lecture 5</a></td>
+		<td>&emsp;<a href="./180c_l5_a.pdf" target="_blank">Lecture 5</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/14</td><td align="center">2</td>
+                <td>Hitting probabilities</td>
+		<td>&emsp;6.5</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l6_e.pdf" target="_blank">Lecture 6</a></td>
+		<td>&emsp;<a href="./180c_l6_a.pdf" target="_blank">Lecture 6</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/17</td><td align="center">3</td>
+                <td>General continuous-time Markov chains. Q-matrices. Matrix exponentials</td>
+		<td>&emsp;6.6</td><td>&emsp;4.1</td>
+		<td>&emsp;<a href="./180c_l7_e.pdf" target="_blank">Lecture 7</a></td>
+	      	<td>&emsp;<a href="./180c_l7_a.pdf" target="_blank">Lecture 7</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/19</td><td align="center">3</td>
+                <td>First step analysis for general Markov chains</td>
+		<td>&emsp;6.5, 6.6</td><td>&emsp;4.4</td>
+		<td>&emsp;<a href="./180c_l8_e.pdf" target="_blank">Lecture 8</a></td>
+		<td>&emsp;<a href="./180c_l8_a.pdf" target="_blank">Lecture 8</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/21</td><td align="center">3</td>
+                <td>Kolmogorov forward and backward equations</td>
+		<td>&emsp;6.3, 6.6</td><td>&emsp;4.2</td>
+		<td>&emsp;<a href="./180c_l9_e.pdf" target="_blank">Lecture 9</a></td>
+		<td>&emsp;<a href="./180c_l9_a.pdf" target="_blank">Lecture 9</a></td>
+		<td>&emsp;<a href="https://youtu.be/OqoKKfO1Yu8" target="_blank">Video</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/24</td><td align="center">4</td>
+                <td>Stationary distributions and long-run behavior. MC review</td>
+		<td>&emsp;6.4, 6.6</td><td>&emsp;4.3</td>
+		<td>&emsp;<a href="./180c_l10_e.pdf" target="_blank">Lecture 10</a></td>
+		<td>&emsp;<a href="./180c_l10_a.pdf" target="_blank">Lecture 10</a></td>
+	      </tr>
+              <tr><td class="tableHeading">4/26</td><td align="center">4</td>
+                <td>Conditioning on a continuous random variable</td>
+		<td>&emsp;2.4</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l11_e.pdf" target="_blank">Lecture 11</a></td>
+		<td>&emsp;<a href="./180c_l11_a.pdf" target="_blank">Lecture 11</a></td>
+		</tr>
+              <tr><td class="tableHeading">4/28</td><td align="center">4</td>
+                         <td><b>Midterm 1</b></td>
+                <td></td><td></td><td></td><td></td><td></td></tr>
+	      </tr>
+              <tr><td class="tableHeading">5/1</td><td align="center">5</td>
+                <td>Conditioning on continuous random varialbes</td>
+		<td>&emsp;2.4</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l12_e.pdf" target="_blank">Lecture 12</a></td>
+		<td>&emsp;<a href="./180c_l12_a.pdf" target="_blank">Lecture 12</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/3</td><td align="center">5</td>
+                <td>Introduction to renewal processes</td>
+		<td>&emsp;7.1</td><td>&emsp;3.1</td>
+		<td>&emsp;<a href="./180c_l13_e.pdf" target="_blank">Lecture 13</a></td>
+		<td>&emsp;<a href="./180c_l13_a.pdf" target="_blank">Lecture 13</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/5</td><td align="center">5</td>
+                <td>Poisson process as a renewal processes</td>
+		<td>&emsp;7.3</td><td>&emsp;3.1</td>
+		<td>&emsp;<a href="./180c_l14_e.pdf" target="_blank">Lecture 14</a></td>
+		<td>&emsp;<a href="./180c_l14_a.pdf" target="_blank">Lecture 14</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/8</td><td align="center">6</td>
+                <td>Examples of renewal processes</td>
+		<td>&emsp;7.2 - 7.3</td><td>&emsp;3.1</td>
+		<td>&emsp;<a href="./180c_l15_e.pdf" target="_blank">Lecture 15</a></td>
+		<td>&emsp;<a href="./180c_l15_a.pdf" target="_blank">Lecture 15</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/10</td><td align="center">6</td>
+                <td>Asymptotic results for renewal processes</td>
+		<td>&emsp;7.4</td><td>&emsp;3.1, 3.3</td>
+		<td>&emsp;<a href="./180c_l16_e.pdf" target="_blank">Lecture 16</a></td>
+		<td>&emsp;<a href="./180c_l16_a.pdf" target="_blank">Lecture 16</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/12</td><td align="center">6</td>
+                <td>Asymptotic results for renewal processes</td>
+		<td>&emsp;7.4</td><td>&emsp;3.1, 3.3</td>
+		<td>&emsp;<a href="./180c_l17_e.pdf" target="_blank">Lecture 17</a></td>
+		<td>&emsp;<a href="./180c_l17_a.pdf" target="_blank">Lecture 17</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/15</td><td align="center">7</td>
+                <td>Asymptotic results for renewal processes</td>
+		<td>&emsp;7.5</td><td>&emsp;3.1, 3.3</td>
+		<td>&emsp;<a href="./180c_l18_e.pdf" target="_blank">Lecture 18</a></td>
+		<td>&emsp;<a href="./180c_l18_a.pdf" target="_blank">Lecture 18</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/17</td><td align="center">7</td>
+                <td>Generalizations of renewal processes</td>
+		<td>&emsp;7.5</td><td>&emsp;3.1, 3.3</td>
+		<td>&emsp;<a href="./180c_l19_e.pdf" target="_blank">Lecture 19</a></td>
+		<td>&emsp;<a href="./180c_l19_a.pdf" target="_blank">Lecture 19</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/19</td><td align="center">7</td>
+                <td>Generalizations of renewal processes</td>
+		<td>&emsp;7.5</td><td>&emsp;3.1, 3.3</td>
+		<td>&emsp;<a href="./180c_l20_e.pdf" target="_blank">Lecture 20</a></td>
+		<td>&emsp;<a href="./180c_l20_a.pdf" target="_blank">Lecture 20</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/22</td><td align="center">8</td>
+                <td>Martingales</td>
+                <td>&emsp;2.5</td><td>&emsp;5.1 - 5.2</td>
+		<td>&emsp;<a href="./180c_l21_e.pdf" target="_blank">Lecture 21</a></td>
+		<td>&emsp;<a href="./180c_l21_a.pdf" target="_blank">Lecture 21</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/24</td><td align="center">8</td>
+                <td><b>Midterm 2</b></td>
+                <td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td class="tableHeading">5/26</td><td align="center">8</td>
+                <td>Martingales</td>
+                <td>&emsp;2.5</td><td>&emsp;5.1 - 5.2</td>
+		<td>&emsp;<a href="./180c_l22_e.pdf" target="_blank">Lecture 22</a></td>
+		<td>&emsp;<a href="./180c_l22_a.pdf" target="_blank">Lecture 22</a></td>
+	      </tr>
+              <tr><td class="tableHeading">5/29</td><td align="center">9</td>
+                <td><b>Memorial Day</b></td>
+              <tr><td class="tableHeading">5/31</td><td align="center">9</td>
+                <td>Definition of Brownian motion</td>
+		<td>&emsp;8.1</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l23_e.pdf" target="_blank">Lecture 23</a></td>
+		<td>&emsp;<a href="./180c_l23_a.pdf" target="_blank">Lecture 23</a></td>
+	      </tr>
+              <tr><td class="tableHeading">6/2</td><td align="center">9</td>
+                <td>Basic properties of Brownian motion</td>
+		<td>&emsp;8.1</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l24_e.pdf" target="_blank">Lecture 24</a></td>
+		<td>&emsp;<a href="./180c_l24_a.pdf" target="_blank">Lecture 24</a></td>
+	      </tr>
+              <tr><td class="tableHeading">6/5</td><td align="center">10</td>
+                <td>The reflection principle</td>
+		<td>&emsp;8.2</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l25_e.pdf" target="_blank">Lecture 25</a></td>
+		<td>&emsp;<a href="./180c_l25_a.pdf" target="_blank">Lecture 25</a></td>
+	      </tr>
+              <tr><td class="tableHeading">6/7</td><td align="center">10</td>
+                <td>Processes derived from Brownian motion</td>
+		<td>&emsp;8.3-8.4</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l26_e.pdf" target="_blank">Lecture 26</a></td>
+		<td>&emsp;<a href="./180c_l26_a.pdf" target="_blank">Lecture 26</a></td>
+	      </tr>
+              <tr><td class="tableHeading">6/9</td><td align="center">10</td>
+                <td>Processes derived from Brownian motion</td>
+		<td>&emsp;8.3-8.4</td><td>&emsp;-</td>
+		<td>&emsp;<a href="./180c_l27_e.pdf" target="_blank">Lecture 27</a></td>
+		<td>&emsp;<a href="./180c_l27_a.pdf" target="_blank">Lecture 27</a></td>
+	      </tr>
+              <!-- <tr><td class="tableHeading">6/3</td><td align="center">10</td> -->
+              <!--   <td>Review</td> -->
+	      <!-- 	<td>&emsp;-</td><td>&emsp;-</td><td>&emsp;-</td><td>&emsp;-</td><td>&emsp;-</td></tr> -->
+             </tbody></table><!-- End table containing contact info -->
+             
+             
+             <p><b>Prerequisite:</b>&nbsp; MATH 180B or concent of instructor.</p>
+             
+             <p><b>Lectures:</b>&nbsp;&nbsp;You are responsible for material presented in the lecture <i>whether or not it is discussed in the textbook.</i>
+             You should expect questions on the exams that will test your understanding of concepts discussed in the lectures.
+             </p>
+
+<p><b>Homework:</b>&nbsp;&nbsp;Homework assignments are posted <a href="#homework">below</a>, and will be due at <b>11:59pm </b>
+  on the indicated due date.&nbsp;  You must turn in your homework through Gradescope; if you have produced it on paper,
+  you can scan it or simply take clear photos of it to upload.  Your lowest homework score will be dropped.</b>&nbsp;  It is allowed and even
+encouraged to discuss homework problems with your classmates and your instructor and TA, but your final write up of your
+homework solutions must be your own work.  
+</p>
+
+<p>
+
+  <a name="exams"><h3>Exams</h3></a>
+
+			<p><b>Midterm Exams:</b>&nbsp;&nbsp;The two midterm exams will take place during the lecture time on the dates listed <a href="#meetings">above</a>.
+			<ul>
+			<li>You may bring <b>one</b> 8.5 by 11 inch sheet of paper with handwritten notes (on both sides) with you to each midterm exam; no other notes (or books)
+			will be allowed.</li>
+			<li>No calculators, phones, or other electronic devices will be allowed during the midterm exams.</li>
+			<li><i><b>There will be no makeup
+ 			midterm exams.</b></i></li>
+			</ul></p>
+
+
+			<p>
+			<b>Final Exam:</b>&nbsp;&nbsp;The final examination will be held at the date and time stated <a href="#meetings">above</a>.
+			<ul>
+			<li>It is your responsibility to ensure that you do not have a schedule conflict involving the final examination; you should not enroll in this class
+			if you cannot take the final examination at its scheduled time.</li>
+			<li>You may bring <b>two</b> 8.5 by 11 inch sheets of paper with handwritten notes (on both sides) with you; no other notes (or books)
+			will be allowed.</li>
+			<li>No calculators, phones, or other electronic devices will be allowed during the final examination.</li>
+			<li><i><b>There will be no makeup
+			final exam.</b></i></li>
+			</ul>
+			</p>
+
+<p><b>The above exam policies will be applied to in-person exams. The exam policies will be changed in case of the changes in exam modality. More detailed instructions will be posted on this website later.</b></p>
+</p>
+
+			
+
+
+<p>
+<b>Administrative Links:</b> &nbsp;&nbsp; Here are two links regarding UC San Diego policies on exams:
+<ul>
+<p>
+<li><a href="http://blink.ucsd.edu/instructors/academic-info/exams/responsibilities.html" target="_blank">
+Exam Responsibilities</a>&nbsp; An outline of the responsibilities of faculty and students
+with regard to final exams</li>
+</p>
+<p>
+<li><a href="https://senate.ucsd.edu/operating-procedures/educational-policies/courses/epc-policies-on-courses/policy-exams-including-midterms-final-exams-and-religious-accommodations-for-exams/" target="_blank">
+Policies on Examinations</a>&nbsp; The Academic Senate policy regarding final examinations
+(These are the rules!)</li>
+</p>
+</ul>
+</p>
+
+
+<p>
+<b>Regrade Policy:</b>&nbsp;&nbsp;
+<ul>
+<li>Your exams and homeworks will be graded using <a href="https://gradescope.com/" target="_blank">Gradescope</a>.
+ &nbsp;You will be able to request regrades <b><i>directly from your TA</i></b> through Gradescope for a specified window of time.
+  &nbsp;Be sure to make your request within the specified window of time; no regrade requests will be accepted after the
+   deadline. <b>Note:</b> Your grader will consider your regrade request only if you
+			have explained clearly, thoroughly, and politely why you think an error in grading was made.</li>
+</li></ul>
+</p>
+
+
+<p><b>Grading:</b> 
+
+  Your cumulative average will be computed as the best of the following weighted averages:
+  <ul>
+    <li>20% Homework, &nbsp;20% Midterm 1, &nbsp;20% Midterm 2, &nbsp;40% Final Exam</li>
+    <li>20% Homework, &nbsp;20% Best midterm, &nbsp;&nbsp;&emsp;&emsp;60% Final Exam</li>
+  </ul>
+  
+</p>
+
+
+
+<p>Your course grade will be determined by your cumulative average at the end of the quarter,
+and will be based on the following scale:
+
+<center>        
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="tableBody"><b>A+</b></td>
+<td class="tableBody"><b>A</b></td>
+<td class="tableBody"><b>A-</b></td>
+<td class="tableBody"><b>B+</b></td>
+<td class="tableBody"><b>B</b></td>
+<td class="tableBody"><b>B-</b></td>
+<td class="tableBody"><b>C+</b></td>
+<td class="tableBody"><b>C</b></td>
+<td class="tableBody"><b>C-</b></td>
+
+</tr>
+<tr>
+<td class="tableBody"><b>97</b></td>
+<td class="tableBody"><b>93</b></td>
+<td class="tableBody"><b>90</b></td>
+<td class="tableBody"><b>87</b></td>
+<td class="tableBody"><b>83</b></td>
+<td class="tableBody"><b>80</b></td>
+<td class="tableBody"><b>77</b></td>
+<td class="tableBody"><b>73</b></td>
+<td class="tableBody"><b>70</b></td>
+
+</tr>
+</tbody>       
+</table>
+</center>
+
+<p>The above scale is guaranteed: for example, if your cumulative average is 80, your final grade will be <i>at least</i> B-. However,
+your instructor may adjust the above scale to be more generous.</p>
+
+
+			
+
+			
+			<p><b>Academic Integrity:</b>&nbsp;&nbsp;UC San Diego
+			<a href="http://students.ucsd.edu/academics/academic-integrity/index.html" target="_blank">code of academic integrity</a>
+			outlines the expected academic honesty of all studentd and faculty, and details the consequences for academic dishonesty.
+			The main issues are cheating and plagiarism, of course, for which we have a zero-tolerance policy.  (Penalties for these
+			offenses always include assignment of a failing grade in the course, and usually involve an administrative penalty, such
+			as suspension or expulsion, as well.)  However, academic integrity also includes things like giving credit where credit
+			is due (listing your collaborators on homework assignments, noting books or papers containing information you used in
+			solutions, etc.), and treating your peers respectfully in class. In addition, here are a few of our expectations for
+			etiquette in and out of class.</p>
+
+			<ul>
+<!--			<li><b>Entering/exiting class:</b> Please arrive on time and stay for the entire class/section period. If, despite your best
+			efforts, you arrive late, please enter quietly through the rear door and take a seat near where you entered. Similarly, in the
+			rare event that you must leave early (e.g. for a medical appointment), please sit close to the rear exit and leave as
+			unobtrusively as possible.</li> -->
+<li><b>Noise and common courtesy:</b> When class/section begins, please stop your conversations.
+  <!-- Wait until class/section is over before putting your materials away in your backpack, standing up, or talking to friends. -->
+  Do not disturb others by engaging in disruptive behavior. Disruption interferes with the learning environment and impairs the ability of others to focus,
+			participate, and engage.</li>
+<li><b>Electronic devices:</b> <!-- Please do not use devices (such as cell phones, laptops, tablets, iPods) for non-class-related matters while in class/section. -->
+  No visual or audio recording of the class meetings is allowed without prior permission of the
+			instructor (whether by camera, cell phone, or other means).</li>
+			<li><b>E-mail etiquette:</b> You are expected to write as you would in any professional correspondence. E-mail communication
+			should be courteous and respectful in manner and tone. Please do not send e-mails that are curt or demanding.</li>
+			</ul>
+
+            <p><h4>Accommodations:</h4>
+
+	      Students requesting accommodations for this course due to a disability must provide a current Authorization for Accommodation (AFA) letter issued by the Office for Students with Disabilities (OSD) which is located in University Center 202 behind Center Hall. The AFA letter may be issued by the OSD electronically or in hard-copy; in either case, please make arrangements to discuss your accommodations with me in advance (<b>by the end of Week 2</b>, if possible). We will make every effort to arrange for whatever accommodations are stipulated by the OSD.
+For more information, see 
+			<a href="http://disabilities.ucsd.edu" target="_blank">here</a>. 
+			</p>
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+        </div>
+		
+		
+
+        <div id="middle" class="clearer">
+           <a name="homework"><h3>Homework</h3></a>
+           
+           <br>
+           
+           <p>Weekly homework assignments are posted here.  Homework is due by 11:59pm on the posted date, through
+        <a href="http://www.gradescope.com" target="_blank">Gradescope</a>.  Late homework will not be accepted.</p>
+           
+           <ul>
+             <li><a href="180c_hw1.pdf">Homework 1</a>, due Friday, April 14.</li><br>
+	     <li><a href="180c_hw2.pdf">Homework 2</a>, due Friday, April 21.</li><br>
+	     <li><a href="180c_hw3.pdf">Homework 3</a>, due <b>Saturday</b>, April 29.</li><br>
+	     <li><a href="180c_hw4.pdf">Homework 4</a>, due Friday, May 5.</li><br>
+	     <li><a href="180c_hw5.pdf">Homework 5</a>, due Friday, May 12.</li><br>
+	     <li><a href="180c_hw6.pdf">Homework 6</a>, due <b>Monday, May 22</b>.</li><br>
+	     <li><a href="180c_hw7.pdf">Homework 7</a>, due Friday, June 2.</li><br>
+	     <li><a href="180c_hw8.pdf">Homework 8</a>, due Friday, June 9.</li><br>
+	     <li><a href="180c_hw9.pdf">Homework 9</a>, <b>not to be turned in</b> .</li><br>
+           </ul>
+	<br>
+		
+		
+
+       </div>
+
+	   
+	   
+	   
+        <!-- ***********************************************************************
+         *                      FOOTER
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->	
+         <ul id="footer">
+            <li><a href="http://www.math.ucsd.edu/">Department of Mathematics, UC San Diego</a></li>
+         </ul>		 
+
+     </div><!-- End container div -->
+  </body>
+</html>

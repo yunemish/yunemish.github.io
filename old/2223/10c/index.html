@@ -1,0 +1,771 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta charset="utf-8">
+     <title>Math 10C - Calculus III </title>
+<!--     <link href="style.css" rel="stylesheet" type="text/css"> -->
+   </head>
+   <body bgcolor="lightgrey">
+     <!-- This "container" controls the flow of the layout -->
+     <div id="container">
+        <a name="top"><h1 class="heading">Math 10C, Lecture B00</h1></a>
+        <h2 class="heading">Calculus III</h2>
+        <h2 class="heading">Fall 2022: MWF 1:00-1:50 PM, CENTR 115</h2>
+<!--	<h2 class="heading">Important: This web site is under construction and will be ready before September 29.</h2>
+	<h2>Please wait until September 29 and check this web site for the course related information before contacting the instructor directly.</h2> -->
+		
+		
+		
+		
+        <!-- ***********************************************************************
+         *                          MAIN MENU 
+         * -------------------------------------------------------------------------
+         * Notes: 1. To add a new menu item add:
+         *           <li><a href="menuItemLink">Menu Item Name</a></li>
+         *           after the last menu item in the list.
+         *        2. If you've made a new announcement and you want the menu to 
+         *           reflect that, replace 
+         *           <li><a href="#announcements">Announcements</a></li>
+         *           with 
+         *           <li class="new"><a href=#announcements">Announcements</a></li>
+         *************************************************************************-->
+        <ul id="nav">
+		   <li><a href="#announcements">Announcements</a></li>
+		   <li><a href="#calendar">Calendar</a></li>
+           <li><a href="#syllabus">Syllabus</a></li>
+           <li><a href="https://piazza.com/ucsd/fall2022/math10clectureb00nemish/home" target="_blank" title="Discussion forum for Q&A">Piazza</a></li>
+		   <li><a href="http://www.gradescope.com" target="_blank">Gradescope</a></li>
+		   <!-- <li><a href="https://edfinity.com" target="_blank">Edfinity</a></li> -->
+           <li><a href="#homework">Homeworks</a></li>
+        </ul><!-- End nav unordered list -->
+
+		
+		
+		
+        <!-- ***********************************************************************
+         *                          LAST MODIFIED
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+ 	<!--       <p class="lastMod">Last Modified: 9/23/15</p>		-->
+ 	
+
+
+        <!-- ***********************************************************************
+         *                    ANNOUNCEMENTS
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+		<div id="middle" class="clearer">
+           <a name="announcements"><h3>Announcements</h3></a>
+           
+		<p>
+		  <ul>
+		    <li>December 10:
+		      <ul>
+			<li><b>Solutions</b> to the final <a href="./f22_10c_final_v1_SOLUTIONS.pdf">version A</a> / <a href="./f22_10c_final_v2_SOLUTIONS.pdf">version B</a> / <a href="./f22_10c_final_v3_SOLUTIONS.pdf">version C</a> / <a href="./f22_10c_final_v4_SOLUTIONS.pdf">version D</a>. The correct answers are marked by an asterisk.</li>
+			<li>
+			  Updated <b>letter grade scale</b>
+			  <center>        
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="tableBody"><b>A+</b></td>
+<td class="tableBody"><b>A</b></td>
+<td class="tableBody"><b>A-</b></td>
+<td class="tableBody"><b>B+</b></td>
+<td class="tableBody"><b>B</b></td>
+<td class="tableBody"><b>B-</b></td>
+<td class="tableBody"><b>C+</b></td>
+<td class="tableBody"><b>C</b></td>
+<td class="tableBody"><b>C-</b></td>
+
+</tr>
+<tr>
+<td class="tableBody"><b>96.5</b></td>
+<td class="tableBody"><b>93</b></td>
+<td class="tableBody"><b>89</b></td>
+<td class="tableBody"><b>86</b></td>
+<td class="tableBody"><b>79</b></td>
+<td class="tableBody"><b>73</b></td>
+<td class="tableBody"><b>69</b></td>
+<td class="tableBody"><b>65</b></td>
+<td class="tableBody"><b>52</b></td>
+
+</tr>
+</tbody>       
+</table>
+</center>
+
+			</li>
+		      </ul>
+		      </li>
+		    <li>December 1:
+		      <ul>
+			<li>The seats for the final exam have been <b>randomly assigned</b>. In order to find out your seat, go to this <a href="./finalseats/index.html" target="_blank">web page</a> and enter your student ID. Please take it seriously: sitting in the wrong seat will be considered an academic integrity violation and will be reported to the AI Office.</li>
+			<li>The last lecture, on Friday, December 2, will be in the form of a Q&amp;A session/office hour. Prepare your questions about the material covered in the class.</li>
+			<li>There will be extra office hours on Friday, December 2, 5:30 - 7 PM, at AP&amp;M 6321.</li>
+		    </ul></li>
+		    <li>November 28:
+		      <ul>
+			<li>You can submit the CAPE reviews for this course using the <a href="https://cape.ucsd.edu/">link</a>. If the overall response rate for the lecture reaches 65% your <b>second lowest</b> homework score will be dropped when computing the final grade (in addition to the lowest homework score)</li>
+			<li>About the <b>final exam</b>:
+			  <ul>
+			    <li>The final exam will take place <b>in person</b> on Monday, December 5, 11:30 AM - 2:30 PM, CENTR 115;</li>
+			    <li>You are allowed to bring two standard (A4 or 8.5x11) sheets with handwritten notes on both sides; no other notes or books are allowed; no use of electronic devices of any kind (phones, smart watches, tablets, calculators) is allowed;</li>
+			    <li>The seats will be randomly assigned; you will receive a link to the website where you will find your assigned seats; please let me know <b>no later than Wednesday</b> if you prefer a left-handed seat;</li>
+			    <li>You have to wear a <b>face mask</b> and you must have your student ID with you at all time during the exam; you must bring your own pen and/or pencil;</li>
+			    <li>The exam will consist of approximately 16 multiple choice questions; each question will have only one correct answer; you will have to fill in a bubble sheet with your answers, so it might be a good idea to bring a pencil;</li>
+			    <li>The final exam is cumulative and covers all the topics discussed in the lectures;</li>
+			    <li>The final exam problems will be similar to the homework problems; you can use the copies of the homework assignments available on Edfinity (called Practice Homework) to practice the problems with unlimited attempts;</li>
+			    <li>The exam will have multiple versions that will be assigned according to your (assigned) seats;</li>
+			    <li>Before the start of the exam, do not enter the room until instructed by the proctors;</li>
+			    <li>During the exam, <b>do not</b> remove any pages from the exam.</li>
+			</ul></li>
+		    </ul></li>
+		    <li>November 24: <b>Homework 8</b> is available on <a href="https://edfinity.com" target="_blank">Edfinity</a>. <b>Due: Friday, December 2, 11:59 PM</b>.</li>
+		    <li>November 18: <b>Solutions</b> to Midterm 2 can be downloaded <a href="./f22_10c_midterm_2_SOLUTIONS.pdf">here</a>.</li>
+		    <li>November 15:
+		      <ul>
+			<li><b>Solutions</b> to <b>Practice midterm 2</b> are available for download <a href="./PRACTICE_f22_10c_midterm_2_SOLUTIONS.pdf" target="_blank">pdf</a>.</li>
+			<li><b>Midterm 2 problems</b> can be downloaded <a href="./f22_10c_midterm_2.pdf">here</a>.</li>
+			<li><b>Homework 7</b> is available on <a href="https://edfinity.com" target="_blank">Edfinity</a>. <b>Due: Wednesday, November 23, 11:59 PM</b>. Textbook homework problems are available <a href="#homework">below</a>.</li>
+		      </ul>
+		    </li>
+		    <li>November 14: <b>Important midterm 2 updates</b>.
+		      <ul><li>Midterm 2 will be a <b>take-home exam</b>. The problems will be posted on this website on Wednesday, November 16.</li>
+			<li>Midterm 2 <b>will not be graded</b> and you do not have to turn your exams in. The solutions will be posted on this website on Thursday, November 17.</li>
+			<li>All students automatically get full score for Midterm 2. The <a href="#grading">grading schemes</a> remain unchanged.</li>
+			<li>There will be <b>no lecture</b> on November 16.</li>
+		    </ul></li>
+		    <li>November 11: <b>Practice midterm 2</b> is available for download <a href="./PRACTICE_f22_10c_midterm_2.pdf" target="_blank">pdf</a>. Solutions will be presented during the lecture on Monday, November 14, and later posted on this website.</li>
+		    <li>November 6: <b>Important</b>: There will be <b>no in-person lecture</b> on Monday, November 7. You can watch the <b>prerecorded lecture</b> <a href="https://youtu.be/k4hQqfQgzcE">here</a></b>. On Wednesday, November 9, the lecture will be held in person as usually.</li>
+		    <li>November 5: <b>Homework 6</b> is available on <a href="https://edfinity.com" target="_blank">Edfinity</a>. <b>Due: Friday, November 11, 11:59 PM</b>.</li>
+		    <li>October 28: <b>Homework 5</b> is available on <a href="https://edfinity.com" target="_blank">Edfinity</a>. <b>Due: Friday, November 4, 11:59 PM</b>. Textbook homework problems are available <a href="#homework">below</a>.</li>
+		    <li>October 25: <b>Solutions</b> to Midterm 1 can be downloaded <a href="./f22_10c_midterm_1_SOLUTIONS.pdf">here</a>.</li>
+		    <li>October 21:
+		      <ul><li><b>Midterm 1</b> has been graded. You can submit  regrade requests on Gradescope until <b>Sunday, October 30</b>.</li>
+			<li><b>Homework 4</b> is available on <a href="https://edfinity.com" target="_blank">Edfinity</a>. <b>Due: Friday, October 28, 11:59 PM</b>. Textbook homework problems are available <a href="#homework">below</a>.</li>
+		    </ul></li>
+		    <li>October 17: <b>Solutions</b> to <b>Practice midterm 1</b> are available for download <a href="./PRACTICE_f22_10c_midterm_1_SOLUTIONS.pdf" target="_blank">pdf</a>.</li>
+		    <li>October 13: <ul>
+			<li>The <b>office hour schedule has been updated (again).</b> Check the <a href="#officehours">timetable</a> and the <a href="#calendar">calendar</a>.</li>
+			<li><b>Practice midterm 1</b> is available for download <a href="./PRACTICE_f22_10c_midterm_1.pdf" target="_blank">pdf</a>. Solutions will be presented during the lecture on Monday, October 17, and later posted on this website.</li>
+			<li><b>Midterm 1</b> will take place (<b>in person</b>) on Wednesday, October 19, 1 - 1:50 PM at CENTR 115 (during the lecture).
+			  <ul><li>the seats have been <b>randomly assigned</b> to the students registered for this course. In order to find out your seat, go to this <a href="./m1seats/index.html" target="_blank">web page</a> and enter your student ID. Please take it seriously, if you are caught sitting at the wrong seat, you will lose the opportunity to drop one of the homeworks when computing your final grade;</li>
+			    <li>you are allowed to bring <b>one</b> standard (A4 or 8.5x11) sheet with <b>handwritten</b> notes on both sides; no other notes or books are allowed; no use of electronic devices of any kind (phones, smart watches, tablets, calculators) is allowed;</li>
+			  <li>write all your solutions on the exam paper; do not remove any pages from the exam.</li></ul>
+		    </ul></li>
+		    <li>October 11: <b>Homework 3</b> is available on <a href="https://edfinity.com" target="_blank">Edfinity</a>. <b>Due: Tuesday, October 18, 11:59 PM</b>. Textbook homework problems are available <a href="#homework">below</a>.</li>
+		    <li>October 5: <b>The office hour schedule has been updated (starting week 3).</b> Check the <a href="#officehours">timetable</a> and the <a href="#calendar">calendar</a>.</li>
+		    <li>October 3:
+		      <ul><li><b>Homework 2</b> is available on <a href="https://edfinity.com" target="_blank">Edfinity</a>. <b>Due: Monday, October 10, 11:59 PM</b>. Textbook homework problems are available <a href="#homework">below</a>.</li>
+		    <li><b>Important</b>. If you have not done this yet, go to Canvas Quizzes and fill in the survey called <b>First Day Survey: Tell Me About Yourself #FinAid</b>. You have to submit this survey <b>before the end of week 2</b>. Submitting this survey will automatically report your commencement of academic activity in this course (required by the Department of Education). Failing to submit by the due date may lead to loss of financial aid award. You have to submit this survey independently of whether or not you have already submitted a similar survey for another class.</li></ul></li>
+		    <li>September 27: Arijit's office hours on Thursday September 29, 3 - 5 PM, are held remotely via zoom (<a href="https://ucsd.zoom.us/j/94230403235">link</a>)</li>
+		    <li>September 25:<ul><li>The due date for <b>Homework 1</b> on Edfinity has been changed to <b>Monday, October 3</b>.</li>
+			<li><b>Important:</b> To enter vectors in Edfinity use the angle vector notation (&lt;x,y&gt; or &lt;x,y,z&gt;) rather than the standard unit vector decomposition (unless specifically instructed to use the standard unit vector decomposition).</li>
+</ul></li>
+		    <li>September 19: Welcome to MATH 10C: Calculus III!</li>
+<!--		<li>New homework problem sheet available now! See below</li>--><br>
+		</ul> 
+	    </p>
+
+ 		<a name="information"><h3>Course Information</h3></a>
+ 		<p>
+ 		<ul>
+		<li><h8>Textbook</h8>: The required textbook for this course is 
+		<br><br>
+		<center><a href="https://openstax.org/details/books/calculus-volume-3"><span style="font-size:20px"><i>Calculus Volume 3</i></a> &emsp; by Gilbert Strang and Edwin “Jed” Herman; </span> <!-- DOI 10.1017/9781108235310 --></center>
+
+		<br>
+		Reading and homework assignments will refer to this textbook as <b>Strang</b>. </li><br>
+
+		<li><h8>Coursework</h8>: There will be
+		  <ul> <li style="margin-top: 5px;"><b>homework</b> assignments due roughly every week, typically on Fridays (starting in Week 1); they are posted, submitted and graded on <a href="https://edfinity.com/">Edfinity</a>; </li>
+		    <li style=" margin-top: 5px;">two <b>midterm exams</b> on Weeks 4 and 8;</li>
+		    <li style=" margin-top: 5px; margin-bottom: 5px;">and a <b>final exam</b>.</li>
+		    </ul>		  
+<!-- The list of the important dates can be found <a href="#dates">here</a>. -->
+		</li><br>
+		
+		<li><h8><a href="https://piazza.com/ucsd/fall2022/math10clectureb00nemish/home" target="_blank">Piazza</a></h8> is an online discussion forum. It will allow you to post messages (openly or anonymously) and answer posts made by your fellow students, about course content, homework, exams, etc.  The instructors and TAs will also monitor and post to Piazza regularly.
+		  <ul>
+		  <li>For all questions related to the course, <b>ask your questions on Piazza</b>  before contacting the instructor/TAs directly.</li>
+		    <li>You can sign up <a href="piazza.com/ucsd/fall2022/math10clectureb00nemish" target="_blank">here</a>.</li>
+		 <li> <b>Note:</b> Piazza
+		has an opt-in "Piazza Careers" section which, if you give permission, will share statistics about your Piazza use with
+		potential future employers.  It also has a "social network" component, based on other students who've shared a Piazza-based
+		class with you, that comes with the usual warnings about privacy concerns. Piazza is fully FERPA compliant, and is an allowed resource
+		   at UCSD.  Nevertheless, you are not required to use Piazza if you do not wish.</li></ul>
+		</li><br>
+		
+		
+		<li><h8>Gradescope</h8> is an online tool for uploading and grading assignments and exams (it is now under the umbrella of Turnitin).  Your midterm and final exams will be uploaded to Gradescope, and you will access your graded exams there as well.
+		  <ul><li>Access the class Gradescope site <a href="http://www.gradescope.com" target="_blank">here</a>.</li>
+		  <li>If you have not been added to the course's Gradescope automatically (through Canvas), you can join using the entry code <b>RZV75B</b>.</li></ul>
+		</li><br>
+
+		<li><h8><a href="https://edfinity.com/">Edfinity</a></h8> is an online homework system. The weekly homework assignments (starting in week 1) will be posted there. You will write your solutions directly in the web browser, and the homework will be graded automatically.
+		  <ul>
+		    <li>To sign up, go to the following registration <a href="https://edfinity.com/join/9QHPH6CC">link</a> (if you already have an Edfinity account from a previous course, please sign into it).</li>
+		    <li>You will be prompted to pay (if applicable) and enroll in our section.</li>
+		  </ul>
+		</li><br>
+
+		
+
+		<li><a href="https://canvas.ucsd.edu/">Canvas</a> is a learning management system (LMS) used by UCSD. We will use Canvas for sharing certain course materials. Make sure that you have acces to the MATH 10C B00 course.</li>
+
+		</ul>
+		</p>
+
+
+
+		</div>
+
+        <!-- ***********************************************************************
+         *                          INSTRUCTOR INFROMATION
+         * -------------------------------------------------------------------------
+         * Notes: 1. This section contains information about how to contact the 
+         *           Professor. 
+         *************************************************************************-->
+		<div id="instructor1">
+	        <h3><a name="officehours">Instructional Staff and Office Hours</a></h3>
+		</div>
+
+            <table class="bordered">
+               <tbody><tr class="tableHeading"><td>Name</td><td>&emsp;Role</td><td>&emsp;Office</td><td>&emsp;E-mail</td><td>&emsp;Office hours</td></tr>
+               <tr><td class="tableHeading"><a href="http://www.math.ucsd.edu/~ynemish" target="_blank">Yuriy Nemish</a></td>
+                   <td>&emsp;Instructor</td>
+                   <td>&emsp;AP&amp;M 6321</td>
+                 <td>&emsp;<a href="mailto:ynemish@ucsd.edu">ynemish@ucsd.edu</a></td>
+		 <td>&emsp;Thursday 4:30 - 6:30 PM (AP&amp;M 6303)
+		 </td>
+               <tr><td class="tableHeading">Chase Wilson</td>
+                   <td>&emsp;Teaching Assistant</td>
+                   <td>&emsp;AP&amp;M 2313</td>
+                 <td>&emsp;<a href="mailto:c7wilson@ucsd.edu">c7wilson@ucsd.edu</a></td>
+		 <td> <ul><li>Tuesday 1 - 2 PM</li>
+		 <li>Thursday 1 - 2 PM</li></ul></td>
+	       </tr>
+               <tr><td class="tableHeading">Arijit Chakraborty</td>
+                   <td>&emsp;Teaching Assistant</td>
+                   <td>&emsp;HSS 5045</td>
+                 <td>&emsp;<a href="mailto:archakraborty@ucsd.edu">archakraborty@ucsd.edu</a></td>
+		 <td> <ul><li>Tuesday 6 - 8 PM via zoom (<a href="https://ucsd.zoom.us/j/97353105885">link</a>)</li>
+		 <li>Thursday 10:30 AM - 12:30 PM</li></ul></td><!-- <td>&emsp;<a href="https://ucsd.zoom.us/j/94979099799">Zoom</a></td> -->
+	       </tr>
+            </tbody></table><!-- End table containing contact info -->
+
+        <div id="welcomeMsg">
+	<!-- ><p>We will be communicating with you and making announcements through an online question and answer 
+	platform called 
+        <a href="http://www.piazza.com/ucsd/winter2016/math180a/home" target="_blank" title="Discussion forum for Q&A">Piazza</a> (sign up link:
+        <a href="http://www.piazza.com/ucsd/winter2016/math180a">piazza.com/ucsd/winter2016/math180a</a>).
+	We ask that when you have a question about the class that might be relevant to other students, 
+	you post your question on Piazza instead of emailing us. That way, everyone can benefit from the response.
+	Posts about homework or exams on Piazza should be content based.  While you are encouraged to crowdsource and discuss coursework through
+	Piazza, please do not post complete solutions to homework problems there.  Questions about grades should be brought to the instructors,
+	in office hours.  You can also post private messages to instructors on Piazza, which we prefer to email. 
+	</p> -->
+	<br>
+	<p>Please, check the following calendar for possible reschedulings of the office hours. You are welcome to attend the office hours of either of the TAs, not just your own.</p>
+
+
+        <!-- ***********************************************************************
+         *                          CALENDAR LINK
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+
+
+		<a name="calendar"><h3>Calendar</h3></a>
+
+		<br>
+
+		<iframe src="https://calendar.google.com/calendar/embed?src=c_s6qd7gug264pnicojfftsq3i7c%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		
+<!-- <iframe src="https://calendar.google.com/calendar/embed?src=mb5ld6tn1pm5j20pdstjo59n1o%40group.calendar.google.com&ctz=America/Los_Angeles"
+style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+
+</div>
+
+        <!-- ***********************************************************************
+         *                 CLASS MEETINGS
+         * -------------------------------------------------------------------------
+         * Notes: 1. The class bordered adds a border around the table, if you don't
+         *           like it replace <table class="bordered"> with <table>
+         *        2. When editing the headings, be careful not to accidentally 
+         *           delete a <td> or a </td> tag!
+         *************************************************************************-->
+      
+
+      
+      
+        <div id="middle">
+        <br>
+
+
+        <!-- Class Meeting Information-->
+
+
+	            <!-- Class Meeting Information-->
+            <a name="meetings"><h3>Class Meetings</h3></a>
+            <table class="bordered">
+               <tbody><tr class="tableHeading"><td></td><td>&emsp;Date</td><td>&emsp;Time</td><td>&emsp;Room</td></tr>
+               <!-- The lecture date, time, and location -->
+               <tr><td class="tableHeading">Lecture (YN)</td>
+                   <td>&emsp;Monday, Wednesday, Friday</td><td>&emsp;1 - 1:50 PM</td><td>&emsp;CENTR 115</td></tr>
+               <!-- The discussion date, time, and location -->
+               <tr><td class="tableHeading">Discussion B01 (CW)</td>
+                   <td>&emsp;Wednesday</td><td>&emsp;6 - 6:50 PM</td><td>&emsp;CENTR 205</td></tr>
+               <tr><td class="tableHeading">Discussion B02 (CW)</td>
+                   <td>&emsp;Wednesday</td><td>&emsp;7 - 7:50 PM</td><td>&emsp;CENTR 205</td></tr>
+               <tr><td class="tableHeading">Discussion B03 (AC)</td>
+                   <td>&emsp;Wednesday</td><td>&emsp;5 - 5:50 PM</td><td>&emsp;CENTR 201</td></tr>
+               <tr><td class="tableHeading">Discussion B04 (AC)</td>
+                   <td>&emsp;Wednesday</td><td>&emsp;6 - 6:50 PM</td><td>&emsp;CENTR 201</td></tr>
+               <tr><td class="tableHeading">Discussion B05 (AC)</td>
+                   <td>&emsp;Wednesday</td><td>&emsp;7 - 7:50 PM</td><td>&emsp;CENTR 201</td></tr>
+               <tr><td class="tableHeading">Discussion B06 (AC)</td>
+                   <td>&emsp;Wednesday</td><td>&emsp;8 - 8:50 PM</td><td>&emsp;CENTR 201</td></tr>
+               </tbody></table><!-- End table containing class meeting info -->
+
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+
+	</div>
+
+
+	        <div id="middle">
+        <br>
+
+
+            <!-- Class Meeting Information-->
+            <a name="dates"><h3>Important dates</h3></a>
+            <table class="bordered">
+              <tbody><tr class="tableHeading"><td></td><td>Week</td><td>&emsp;Date</td><td>&emsp;Time</td><td>&emsp;Room</td><td>&emsp;Policy</td></tr>
+		<!-- The exam date, time, and location -->
+		<tr><td class="tableHeading">Midterm Exam 1</td>
+                  <td style="text-align:center">4</td><td>&emsp;Wednesday, Oct 19</td><td>&emsp;1 - 1:50 PM</td><td>&emsp;CENTR 115</td><td>&emsp;<a href="#midterms">Midterm Exams</a></td></tr>
+		<tr><td class="tableHeading">Midterm Exam 2</td>
+                  <td style="text-align:center">8</td><td>&emsp;Wednesday, Nov 16</td><td>&emsp;1 - 1:50 PM</td><td>&emsp;CENTR 115</td><td>&emsp;<a href="#midterms">Midterm Exams</a></td></tr>
+		<tr><td class="tableHeading">Final Exam</td>
+                  <td>Finals</td><td>&emsp;Monday, Dec 5</td><td>&emsp;11:30 AM - 2:30 PM</td><td>&emsp;TBA</td><td>&emsp;<a href="#finals">Final Exam</a></td></tr>
+            </tbody></table><!-- End table containing class meeting info -->
+
+
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+
+	</div>
+
+
+	
+
+	<!-- ***********************************************************************
+         *                    CLASS INFORMATION
+         * -------------------------------------------------------------------------
+         * Notes: 1. This section includes: 
+         *          I.   Welcome Message
+         *          II.  Course Description
+         *          III. Learning goals
+	 *	    IV.  Grading 
+         *          V.  Regrades and accommodations.
+         *          VI.   Academic Integrity
+         *        2. Do not delete the <br/><br/> when editing the text!
+         *************************************************************************-->
+        <div id="welcomeMsg">
+             <a name="syllabus"><h3>Syllabus</h3></a>
+			 <br>             
+             <p>Welcome to Math 10C: a one quarter course introduction to calculus of functions of more than one variable.  <!-- This course is the prerequisite -->
+             <!-- for the subsequent courses Math 180B/C (Introduction to Stochastic Processes) and Math 181A/B (Introduction to Mathematical -->
+             <!-- Statistics), as well as for MATH 114 (Introduction to Computational Stochastics), MATH 194 (The Mathematics of Finance) and Math 189 (Exploratory Data Analysis and Inference). --> According to the UC San Diego
+             <a href="http://ucsd.edu/catalog/courses/MATH.html" target="_blank">Course Catalog</a>, the topics covered are functions of more than one variable, vector geometry, partial derivatives, velocity and acceleration vectors, and optimization problems.</p>
+             
+             <p>Here is a more detailed listing of course topics, in the sequence they will be covered, together with the relevant section(s) of the
+               textbook.  While each topic corresponds to approximately one lecture, there will be some give and take here.
+	       This is a rough schedule that will be updated during the term.
+
+             
+               <table class="bordered">
+              <tr><th>Date</th><th>Week</th><th>Topic</th><th>&emsp;Strang</th><th>&emsp;Preliminary slides</th><th>&emsp;Final slides</th><!-- <th><a name="lectures">Lecture videos</a></th> --></tr>
+              <tr><td class="tableHeading">9/23</td><td align="center">0</td>
+                   <td>Administrivia. Vectors in the plane</td>
+                <td>&emsp;2.1</td>
+		<td>&emsp;<a href="./10c_l1_e.pdf" target="_blank">Slides 1</a></td>
+		<td>&emsp;<a href="./10c_l1_a.pdf" target="_blank">Slides 1</a></td>
+          <!--    <td><a href="" target="_blank">Lecture x</a></td></tr> -->
+               <tr><td class="tableHeading">9/26</td><td align="center">1</td>
+                   <td>Vectors in the plane</td>
+		 <td>&emsp;2.1</td>
+		 <td>&emsp;<a href="./10c_l2_e.pdf" target="_blank">Slides 2</a></td>
+		 <td>&emsp;<a href="./10c_l2_a.pdf" target="_blank">Slides 2</a></td></tr>
+               <tr><td class="tableHeading">9/28</td><td align="center">1</td>
+                   <td>Vectors in three dimensions</td>
+                 <td>&emsp;2.2</td>
+		 <td>&emsp;<a href="./10c_l3_e.pdf" target="_blank">Slides 3</a></td>
+		 <td>&emsp;<a href="./10c_l3_a.pdf" target="_blank">Slides 3</a></td></tr>
+               <tr><td class="tableHeading">9/30</td><td align="center">1</td>
+                   <td>The dot product</td>
+                 <td>&emsp;2.3</td>
+		 <td>&emsp;<a href="./10c_l4_e.pdf" target="_blank">Slides 4</a></td>
+		 <td>&emsp;<a href="./10c_l4_a.pdf" target="_blank">Slides 4</a></td></tr>
+               <tr><td class="tableHeading">10/3</td><td align="center">2</td>
+                   <td>The dot product</td>
+                 <td>&emsp;2.4</td>
+		 <td>&emsp;<a href="./10c_l5_e.pdf" target="_blank">Slides 5</a></td>
+		 <td>&emsp;<a href="./10c_l5_a.pdf" target="_blank">Slides 5</a></td></tr>
+               <tr><td class="tableHeading">10/5</td><td align="center">2</td>
+                   <td>The cross product</td>
+                 <td>&emsp;2.4</td>
+		 <td>&emsp;<a href="./10c_l6_e.pdf" target="_blank">Slides 6</a></td>
+		 <td>&emsp;<a href="./10c_l6_a.pdf" target="_blank">Slides 6</a></td></tr>
+               <tr><td class="tableHeading">10/7</td><td align="center">2</td>
+                   <td>Equations of lines and planes</td>
+                 <td>&emsp;2.5</td>
+		 <td>&emsp;<a href="./10c_l7_e.pdf" target="_blank">Slides 7</a></td>
+		 <td>&emsp;<a href="./10c_l7_a.pdf" target="_blank">Slides 7</a></td></tr>
+               <tr><td class="tableHeading">10/10</td><td align="center">3</td>
+                   <td>Equations of lines and planes</td>
+                 <td>&emsp;2.5</td>
+		 <td>&emsp;<a href="./10c_l8_e.pdf" target="_blank">Slides 8</a></td>
+		 <td>&emsp;<a href="./10c_l8_a.pdf" target="_blank">Slides 8</a></td></tr>
+               <tr><td class="tableHeading">10/12</td><td align="center">3</td>
+                   <td>Equations of planes</td>
+                 <td>&emsp;2.5</td>
+		 <td>&emsp;<a href="./10c_l9_e.pdf" target="_blank">Slides 9</a></td>
+		 <td>&emsp;<a href="./10c_l9_a.pdf" target="_blank">Slides 9</a></td></tr>
+               <tr><td class="tableHeading">10/14</td><td align="center">3</td>
+                   <td>Vector-valued functions</td>
+                 <td>&emsp;3.1, 3.2, 3.4</td>
+		 <td>&emsp;<a href="./10c_l10_e.pdf" target="_blank">Slides 10</a></td>
+		 <td>&emsp;<a href="./10c_l10_a.pdf" target="_blank">Slides 10</a></td></tr>
+               <tr><td class="tableHeading">10/17</td><td align="center">4</td>
+                   <td>Calculus of vector-valued functions. Motion in space. Review</td>
+                 <td></td>
+		 <td>&emsp;<a href="./10c_l11_e.pdf" target="_blank">Slides 11</a></td>
+		 <td>&emsp;<a href="./10c_l11_a.pdf" target="_blank">Slides 11</a></td></tr>
+               <tr><td class="tableHeading">10/19</td><td align="center">4</td>
+                   <td><b>Midterm 1</b></td>
+                 <td></td> <td></td> <td></td></tr>
+               <tr><td class="tableHeading">10/21</td><td align="center">4</td>
+                   <td>Calculus of vector-valued functions. Review</td>
+                 <td>&emsp;3.2</td>
+		 <td>&emsp;<a href="./10c_l12_e.pdf" target="_blank">Slides 12</a></td>
+		 <td>&emsp;<a href="./10c_l12_a.pdf" target="_blank">Slides 12</a></td></tr>
+               <tr><td class="tableHeading">10/24</td><td align="center">5</td>
+                   <td>Motion in space. Functions of several variables</td>
+                 <td>&emsp;4.1</td>
+		 <td>&emsp;<a href="./10c_l13_e.pdf" target="_blank">Slides 13</a></td>
+		 <td>&emsp;<a href="./10c_l13_a.pdf" target="_blank">Slides 13</a></td></tr>
+               <tr><td class="tableHeading">10/26</td><td align="center">5</td>
+                   <td>Limits and continuity</td>
+                 <td>&emsp;4.2</td>
+		 <td>&emsp;<a href="./10c_l14_e.pdf" target="_blank">Slides 14</a></td>
+		 <td>&emsp;<a href="./10c_l14_a.pdf" target="_blank">Slides 14</a></td></tr>
+               <tr><td class="tableHeading">10/28</td><td align="center">5</td>
+                   <td>Limits and continuity</td>
+                 <td>&emsp;4.2</td>
+		 <td>&emsp;<a href="./10c_l15_e.pdf" target="_blank">Slides 15</a></td>
+		 <td>&emsp;<a href="./10c_l15_a.pdf" target="_blank">Slides 15</a></td></tr>
+               <tr><td class="tableHeading">10/31</td><td align="center">6</td>
+                   <td>Partial derivatives</td>
+                 <td>&emsp;4.3</td>
+		 <td>&emsp;<a href="./10c_l16_e.pdf" target="_blank">Slides 16</a></td>
+		 <td>&emsp;<a href="./10c_l16_a.pdf" target="_blank">Slides 16</a></td></tr>
+               <tr><td class="tableHeading">11/2</td><td align="center">6</td>
+                   <td>Tangent planes and linear approximation</td>
+                 <td>&emsp;4.4</td>
+		 <td>&emsp;<a href="./10c_l17_e.pdf" target="_blank">Slides 17</a></td>
+		 <td>&emsp;<a href="./10c_l17_a.pdf" target="_blank">Slides 17</a></td></tr>
+               <tr><td class="tableHeading">11/4</td><td align="center">6</td>
+                   <td>Differentiability. The chain rule </td>
+                 <td>&emsp;4.4, 4.5</td>
+		 <td>&emsp;<a href="./10c_l18_e.pdf" target="_blank">Slides 18</a></td>
+		 <td>&emsp;<a href="./10c_l18_a.pdf" target="_blank">Slides 18</a></td></tr>
+               <tr><td class="tableHeading">11/7</td><td align="center">7</td>
+                   <td>Directional derivatives and the gradient</td>
+                 <td>&emsp;4.6</td>
+		 <td>&emsp;<a href="./10c_l19_e.pdf" target="_blank">Slides 19</a></td>
+		 <td>&emsp;<a href="./10c_l19_a.pdf" target="_blank">Slides 19</a></td>
+		 <td>&emsp;<a href="https://youtu.be/k4hQqfQgzcE">Prerecorded video</a></td></tr>
+               <tr><td class="tableHeading">11/9</td><td align="center">7</td>
+                   <td>Maxima/minima</td>
+                 <td>&emsp;4.7</td>
+		 <td>&emsp;<a href="./10c_l20_e.pdf" target="_blank">Slides 20</a></td>
+		 <td>&emsp;<a href="./10c_l20_a.pdf" target="_blank">Slides 20</a></td></tr>
+               <tr><td class="tableHeading">11/11</td><td align="center">7</td>
+                   <td><b>Veterans Day</b></td>
+                 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td></tr> 
+               <tr><td class="tableHeading">11/14</td><td align="center">8</td>
+                   <td>Maxima/minima. Review</td>
+                 <td>&emsp;4.7</td>
+		 <td>&emsp;<a href="./10c_l21_e.pdf" target="_blank">Slides 21</a></td>
+		 <td>&emsp;<a href="./10c_l21_a.pdf" target="_blank">Slides 21</a></td></tr>
+	      <tr><td class="tableHeading">11/16</td><td align="center">8</td>
+                   <td><b>Midterm 2</b></td>
+                 <td></td>
+		<td></td>
+               <td></td>
+               <td></td></tr>
+               <tr><td class="tableHeading">11/18</td><td align="center">8</td>
+                   <td>Maxima/minima</td>
+                 <td>&emsp;4.7</td>
+		 <td>&emsp;<a href="./10c_l22_e.pdf" target="_blank">Slides 22</a></td>
+		 <td>&emsp;<a href="./10c_l22_a.pdf" target="_blank">Slides 22</a></td></tr>
+               <tr><td class="tableHeading">11/21</td><td align="center">9</td>
+                   <td>Lagrange multipliers</td>
+                 <td>&emsp;4.8</td>
+		 <td>&emsp;<a href="./10c_l23_e.pdf" target="_blank">Slides 23</a></td>
+		 <td>&emsp;<a href="./10c_l23_a.pdf" target="_blank">Slides 23</a></td></tr>
+               <tr><td class="tableHeading">11/23</td><td align="center">9</td>
+                   <td>Lagrange multipliers</td>
+                 <td>&emsp;4.8</td>
+		 <td>&emsp;<a href="./10c_l24_e.pdf" target="_blank">Slides 24</a></td>
+		 <td>&emsp;<a href="./10c_l24_a.pdf" target="_blank">Slides 24</a></td></tr>
+               <tr><td class="tableHeading">11/25</td><td align="center">9</td>
+                   <td><b>Thanksgiving</b></td>
+                 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td></tr>
+               <tr><td class="tableHeading">11/28</td><td align="center">10</td>
+                   <td>Lagrange multipliers</td>
+                 <td>&emsp;4.8</td>
+		 <td>&emsp;<a href="./10c_l25_e.pdf" target="_blank">Slides 25</a></td>
+		 <td>&emsp;<a href="./10c_l25_a.pdf" target="_blank">Slides 25</a></td></tr>
+               <tr><td class="tableHeading">11/30</td><td align="center">10</td>
+                   <td>Lagrange multipliers</td>
+                 <td>&emsp;4.8</td>
+		 <td>&emsp;<a href="./10c_l26_e.pdf" target="_blank">Slides 26</a></td>
+		 <td>&emsp;<a href="./10c_l26_a.pdf" target="_blank">Slides 26</a></td></tr>
+               <tr><td class="tableHeading">12/2</td><td align="center">10</td>
+                   <td>Review</td>
+                 <td></td>
+	  <!-- <td><a href="" target="_blank">Slides x</a></td>
+               <td><a href="" target="_blank">Slides x</a></td>
+               <td><a href="" target="_blank">Lecture x</a></td></tr> -->
+             </tbody></table><!-- End table containing contact info -->
+             
+             
+             <p><b>Prerequisite:</b>&nbsp; AP Calculus BC score of 3, 4, or 5, or MATH 10B, or MATH 20B.</p>
+             
+             <p><b>Lecture:</b>&nbsp;&nbsp;You are
+             responsible for material presented in the lecture <i>whether or not it is discussed in the textbook.</i>
+             You should expect questions on the exams that will test your understanding of concepts discussed in the lecture.
+             </p>
+
+<p><b>Homework</b>:
+  <ul><li></b>Homework assignments are posted on <a href="https://edfinity.com/">Edfinity</a>, and will be due at <b>11:59 PM </b> on the indicated due date.&nbsp; Only homework assignments submitted and graded on Edfinity <b>will contribute to your final grade</b> (see <a href="#grading">grading</a>). Your lowest homework score will be dropped. &nbsp;  It is allowed and even encouraged to discuss homework problems with your classmates and your instructor and TA, but your final write up of your homework solutions must be your own work.</li>
+<li>Additionally to each homework assignment, I will post <a href="#homework">below</a> <b>textbook homework assignments</b>. These assignments <b>will not be turned in and graded</b>; however, it is often the case that exam questions are based on textbook homework problems.
+The list of homework problems is subject to revision during the term. Please check this page regularly for updates.
+The “due dates” given are the same as the date when the corresponding Edfinity assignment is due.</li>
+</ul>
+</p>
+
+<p>
+
+  <a name="exams"><h3>Exams</h3></a>
+
+			<p><b><a  name="midterms">Midterm Exams:</a></b>&nbsp;&nbsp;The two midterm exams will take place during the lecture time on the dates listed <a href="#meetings">above</a>.
+			<ul>
+			<li>You may bring <b>one</b> 8.5 by 11 inch sheet of paper with handwritten notes (on both sides) with you to each midterm exam; no other notes (or books)
+			will be allowed.</li>
+			<li>No calculators, phones, or other electronic devices will be allowed during the midterm exams.</li>
+			<li><i><b>There will be no makeup
+ 			      midterm exams.</b></i></li>
+			<li>The detailed midterm exam instructions will be posted one week before each midterm.</li>
+			</ul></p>
+
+
+			<p>
+			<b><a  name="finals">Final Exam:</a></b>&nbsp;&nbsp;The final examination will be held at the date and time stated <a href="#meetings">above</a>.
+			<ul>
+			<li>It is your responsibility to ensure that you do not have a schedule conflict involving the final examination; you should not enroll in this class
+			if you cannot take the final examination at its scheduled time.</li>
+			<li>You may bring <b>two</b> 8.5 by 11 inch sheets of paper with handwritten notes (on both sides) with you; no other notes (or books)
+			will be allowed.</li>
+			<li>No calculators, phones, or other electronic devices will be allowed during the final examination.</li>
+			<li><i><b>There will be no makeup
+			      final exam.</b></i></li>
+			<li>The detailed final exam instructions will be posted one week before the final exam.</li>
+			</ul>
+			</p>
+
+<p><b>The above exam policies will be applied to in-person exams. The exam policies will be changed in case of the change in exam modality. More detailed instructions will be posted on this website later.</b></p>
+</p>
+
+<p>
+<b>Administrative Links:</b> &nbsp;&nbsp; Here are two links regarding UC San Diego policies on exams:
+<ul>
+<p>
+<li><a href="http://blink.ucsd.edu/instructors/academic-info/exams/responsibilities.html" target="_blank">
+Exam Responsibilities</a>&nbsp; An outline of the responsibilities of faculty and students
+with regard to final exams</li>
+</p>
+<p>
+<li><a href="https://senate.ucsd.edu/operating-procedures/educational-policies/courses/epc-policies-on-courses/policy-exams-including-midterms-final-exams-and-religious-accommodations-for-exams/" target="_blank">
+Policies on Examinations</a>&nbsp; The Academic Senate policy regarding final examinations
+(These are the rules!)</li>
+</p>
+</ul>
+</p>
+
+
+<p>
+<b>Regrade Policy:</b>&nbsp;&nbsp;
+<ul>
+<li>Your exams will be graded using <a href="https://gradescope.com/" target="_blank">Gradescope</a>.
+ &nbsp;You will be able to request regrades <b><i>directly from your TA</i></b> through Gradescope for a specified window of time.
+  &nbsp;Be sure to make your request within the specified window of time; no regrade requests will be accepted after the
+   deadline. <b>Note:</b> Your grader will consider your regrade request only if you
+			have explained clearly, thoroughly, and politely why you think an error in grading was made.</li>
+</li></ul>
+</p>
+
+
+<p><a name="grading"><b>Grading:</b> </a>
+
+  Your cumulative average will be computed as the best of the following weighted averages:
+  <ul>
+    <li>20% Homework (Edfinity),  &nbsp;20% Midterm 1, &nbsp;20% Midterm 2, &nbsp;40% Final Exam</li>
+    <li>20% Homework (Edfinity),  &nbsp;20% Best midterm, &nbsp;&nbsp;&emsp;&emsp;60% Final Exam</li>
+  </ul>
+  
+</p>
+
+
+
+<p>Your course grade will be determined by your cumulative average at the end of the quarter, and will be based on the following scale:
+
+<center>        
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="tableBody"><b>A+</b></td>
+<td class="tableBody"><b>A</b></td>
+<td class="tableBody"><b>A-</b></td>
+<td class="tableBody"><b>B+</b></td>
+<td class="tableBody"><b>B</b></td>
+<td class="tableBody"><b>B-</b></td>
+<td class="tableBody"><b>C+</b></td>
+<td class="tableBody"><b>C</b></td>
+<td class="tableBody"><b>C-</b></td>
+
+</tr>
+<tr>
+<td class="tableBody"><b>97</b></td>
+<td class="tableBody"><b>93</b></td>
+<td class="tableBody"><b>90</b></td>
+<td class="tableBody"><b>87</b></td>
+<td class="tableBody"><b>83</b></td>
+<td class="tableBody"><b>80</b></td>
+<td class="tableBody"><b>77</b></td>
+<td class="tableBody"><b>73</b></td>
+<td class="tableBody"><b>70</b></td>
+
+</tr>
+</tbody>       
+</table>
+</center>
+
+<p>The above scale is guaranteed: for example, if your cumulative average is 80, your final grade will be <i>at least</i> B-. However,
+your instructor may adjust the above scale to be more generous.</p>
+
+
+			
+
+			
+			<p><b>Academic Integrity:</b>&nbsp;&nbsp;UC San Diego's
+			<a href="http://students.ucsd.edu/academics/academic-integrity/index.html" target="_blank">code of academic integrity</a>
+			outlines the expected academic honesty of all studentd and faculty, and details the consequences for academic dishonesty.
+			The main issues are cheating and plagiarism, of course, for which we have a zero-tolerance policy.  (Penalties for these
+			offenses always include assignment of a failing grade in the course, and usually involve an administrative penalty, such
+			as suspension or expulsion, as well.)  However, academic integrity also includes things like giving credit where credit
+			is due (listing your collaborators on homework assignments, noting books or papers containing information you used in
+			solutions, etc.), and treating your peers respectfully in class. In addition, here are a few of our expectations for
+			etiquette in and out of class.</p>
+
+			<ul>
+			<li><b>Entering/exiting class:</b> Please arrive on time and stay for the entire class/section period. If, despite your best
+			efforts, you arrive late, please enter quietly through the rear door and take a seat near where you entered. Similarly, in the
+			rare event that you must leave early (e.g. for a medical appointment), please sit close to the rear exit and leave as
+			unobtrusively as possible.</li>
+<li><b>Noise and common courtesy:</b> When class/section begins, please stop your conversations.
+   Wait until class/section is over before putting your materials away in your backpack, standing up, or talking to friends.
+  Do not disturb others by engaging in disruptive behavior. Disruption interferes with the learning environment and impairs the ability of others to focus,
+			participate, and engage.</li>
+<li><b>Electronic devices:</b> Please do not use devices (such as cell phones, laptops, tablets, iPods) for non-class-related matters while in class/section.
+  No visual or audio recording of the class meetings is allowed without prior permission of the	instructor (whether by camera, cell phone, or other means).</li>
+			<li><b>E-mail etiquette:</b> You are expected to write as you would in any professional correspondence. E-mail communication
+			should be courteous and respectful in manner and tone. Please do not send e-mails that are curt or demanding.</li>
+			</ul>
+
+            <p><h4>Accommodations:</h4>
+
+	      Students requesting accommodations for this course due to a disability must provide a current Authorization for Accommodation (AFA) letter issued by the Office for Students with Disabilities (OSD) which is located in University Center 202 behind Center Hall. The AFA letter may be issued by the OSD electronically or in hard-copy; in either case, please make arrangements to discuss your accommodations with me in advance (<b>by the end of Week 2</b>, if possible). We will make every effort to arrange for whatever accommodations are stipulated by the OSD.
+For more information, see 
+			<a href="http://disabilities.ucsd.edu" target="_blank">here</a>. 
+			</p>
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+        </div>
+		
+		
+
+        <div id="middle" class="clearer">
+           <a name="homework"><h3>Textbook homework assignments</h3></a>
+           
+           <br>
+           
+           <!-- <p>Weekly homework assignments are posted here.  Homework is due by 11:59 PM on the posted date. Late homework will not be accepted.</p> -->
+           
+           <ul>
+             <li>Homework 1 <b>(due Oct 3)</b> <b>Strang, Sec. 2.1</b>: 9, 13, 19, 21, 27, 33, 43; <b>Strang, Sec. 2.2</b>: 61, 63, 65, 69, 75, 89</li><br>
+	     <li>Homework 2 <b>(due Oct 10)</b> <b>Strang, Sec. 2.3</b>: 147, 149, 155, 169; <b>Strang, Sec. 2.4</b>: 187, 191, 193, 211, 213, 215</li><br>
+	     <li>Homework 3 <b>(due Oct 18)</b> <b>Strang, Sec. 2.5</b>: 245, 249, 253, 259, 261, 277, 281</li><br>
+	     <li>Homework 4 <b>(due Oct 28)</b> <b>Strang, Sec. 3.1</b>: 11; <b>Strang, Sec. 3.2</b>: 47, 55, 67; <b>Strang, Sec. 3.4</b>: 157, 165, 167 </li><br>
+	     <li>Homework 5 <b>(due Nov 4)</b> <b>Strang, Sec. 4.1</b>: 7, 11, 13, 17, 21, 33, 53</li><br>
+	     <li>Homework 7 <b>(due Nov 23)</b> <b>Strang, Sec. 4.7</b>: 311, 313, 317, 321, 325, 329, 333, 337, 345, 347, 357</li>
+           <!-- <li><a href="hw1180a.pdf">Homework 1</a>, due Friday, September 30.</li><br> -->
+ 	   <!-- <li><a href="hw2180a.pdf">Homework 2</a>, due Friday, October 7.</li><br> -->
+	   <!-- <li><a href="hw3180a.pdf">Homework 3</a>, due Friday, October 14.</li><br> -->
+	   <!-- <li><a href="hw4180a.pdf">Homework 4</a>, due Friday, October 28.</li><br> -->
+	   <!-- <li><a href="hw5180a.pdf">Homework 5</a>, due Friday, November 4.</li><br> -->
+	   <!-- <li><a href="hw6180a.pdf">Homework 6</a>, due Friday, November 11.</li><br> -->
+	   <!-- <li><a href="hw7180a.pdf">Homework 7</a>, due Friday, November 25.</li><br> -->
+	   <!-- <li><a href="hw8180a.pdf">Homework 8</a>, due Friday, December 2.</li><br> -->
+           </ul>
+	<br>
+		
+		
+
+       </div>
+
+	   
+	   
+	   
+        <!-- ***********************************************************************
+         *                      FOOTER
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->	
+         <ul id="footer">
+            <li><a href="http://www.math.ucsd.edu/">Department of Mathematics, UC San Diego</a></li>
+         </ul>		 
+
+     </div><!-- End container div -->
+  </body>
+</html>
