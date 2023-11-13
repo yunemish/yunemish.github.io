@@ -1,0 +1,646 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta charset="utf-8">
+     <title>Math 180A - Introduction to Probability </title>
+<!--     <link href="style.css" rel="stylesheet" type="text/css"> -->
+   </head>
+   <body bgcolor="lightgrey">
+     <!-- This "container" controls the flow of the layout -->
+     <div id="container">
+        <a name="top"><h1 class="heading">Math 180A</h1></a>
+        <h2 class="heading">Fall 2019, Lecture A00 (MWF 9:00-9:50am)</h2>
+        <h2 class="heading">Introduction to Probability</h2>
+		
+		
+		
+		
+        <!-- ***********************************************************************
+         *                          MAIN MENU 
+         * -------------------------------------------------------------------------
+         * Notes: 1. To add a new menu item add:
+         *           <li><a href="menuItemLink">Menu Item Name</a></li>
+         *           after the last menu item in the list.
+         *        2. If you've made a new announcement and you want the menu to 
+         *           reflect that, replace 
+         *           <li><a href="#announcements">Announcements</a></li>
+         *           with 
+         *           <li class="new"><a href=#announcements">Announcements</a></li>
+         *************************************************************************-->
+        <ul id="nav">
+		   <li><a href="#announcements">Announcements</a></li>
+		   <li><a href="#calendar">Calendar</a></li>
+           <li><a href="#syllabus">Syllabus</a></li>
+           <li><a href="htts://piazza.com/ucsd/fall2019/math180alecturea00nemish/home" target="_blank" title="Discussion forum for Q&A">Piazza</a></li>
+           <li><a href="http://www.gradescope.com" target="_blank">Gradescope</a></li>
+           <li><a href="#homework">Homeworks</a></li>
+        </ul><!-- End nav unordered list -->
+
+		
+		
+		
+        <!-- ***********************************************************************
+         *                          LAST MODIFIED
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+ 	<!--       <p class="lastMod">Last Modified: 9/23/15</p>		-->
+ 	
+
+
+        <!-- ***********************************************************************
+         *                    ANNOUNCEMENTS
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+		<div id="middle" class="clearer">
+           <a name="announcements"><h3>Announcements</h3></a>
+           
+		<p>
+		  <ul>
+		    <li><b>Regrades</b> for the final will be active on Gradescope on Thursday, January 16, from 8am to 11pm.</li> 
+		    <li>The <b>office hours</b> dedicated to the final exam will take place on Wednesday, January 15, from 5pm to 7pm in APM 6422.</li>
+		    <li>About computing your <b>final grade</b>:
+		      <ul>
+			<li><b>Homework:</b> all 8 homeworks have equal weight; for each assignment, divide your score for this homework by the maximal number of points (e.g. divide your score for HW1 by 20, HW2 by 19, HW8 by 12 etc); then compute the average of the 7 highest numbers and then multiply this average by 20.<br>
+			  E.g., if your HW scores are 16, 19, 15, 20, 20, 10, 16, 10, you first compute your relative scores 16/20, 19/19, 15/20, 20/20, 20/20, 10/20, 16/20, 8/12, which gives 0.8, 1, 0.75, 1, 1, 0.5, 0.8, 0.75, then drop the lowest (0.5 in this case), compute the average of the remaining 7 (0.8 + 1 + 0.75 + 1 + 1 + 0.8 + 0.75)/7 and multiply the obtained number by 20. This will give the number of points you get for the homework assignments.</li>
+			<li>Your <b>final numerical grade</b> will be computed as the maximum of the following four numbers (here HW denotes your HW points computed as above, M1, M2 and F are your grades for midterms 1 and 2 and final):
+			  <ul>
+			    <li>HW points + 0.2*M1 + 0.2*M2 + 0.4*F</li>
+			    <li>HW points + 0.2*M1 + 0.6*F</li>
+			    <li>HW points + 0.2*M2 + 0.6*F</li>
+			    <li>HW points + 0.8*F</li>
+			</ul></li>
+			<li>To translate your numerical grade into the <b>letter grade</b>, please use the following (updated) table
+			<center>        
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="tableBody"><b>F</b></td>
+<td class="tableBody"><b>C-</b></td>
+<td class="tableBody"><b>C</b></td>
+<td class="tableBody"><b>C+</b></td>
+<td class="tableBody"><b>B-</b></td>
+<td class="tableBody"><b>B</b></td>
+<td class="tableBody"><b>B+</b></td>
+<td class="tableBody"><b>A-</b></td>
+<td class="tableBody"><b>A</b></td>
+<td class="tableBody"><b>A+</b></td>
+
+</tr>
+<tr>
+<td class="tableBody"><b>&lt 34</b></td>
+<td class="tableBody"><b>34-46</b></td>
+<td class="tableBody"><b>46-51</b></td>
+<td class="tableBody"><b>51-57</b></td>
+<td class="tableBody"><b>57-62</b></td>
+<td class="tableBody"><b>62-67</b></td>
+<td class="tableBody"><b>67-73</b></td>
+<td class="tableBody"><b>73-88</b></td>
+<td class="tableBody"><b>81-88</b></td>
+<td class="tableBody"><b>&gt 88</b></td>
+
+</tr>
+</tbody>       
+</table>
+</center>
+</li><br>
+		    <li><b>Results</b> of the final exam have been released on Gradescope. <b>Passing grade</b> for the final is <b>20</b> out of 100. <b>Regrades</b> for the final will be postponed to the beginning of the second quarter (you will receive a reminder).</li><br>
+		    <li><b>Regrades</b> for HW8 will be active on Gradescope on Friday, December 13 from 8am to 11pm.</li>
+		    <li><b>Solutions</b> to the final exam can be found here.</li>
+		    <li><b>Solutions</b> to <b>all</b> problems from HW8 can be found here, <b>solutions</b> to the practice problems from sections 6,8 and 9 are available here (<b>Important</b> there was mistake in the previous version of the last file in the solution of the problem 5(d). It has been fixed. See the discussion on Piazza for more details).
+		    <li><b>Final exam</b> will take place on Wednesday, December 11, 8:00am-10:59am in CENTR113.</li><br>
+		    <ul>
+		      <li><b>Important:</b> clearly indicate in the space after the question if a part of your answer is written on one of the blank pages and specify where the grader can find it.</li>
+			<li><b>Important:</b> the <b>seats</b> have been randomly assigned to the students registered for this course. In order to find out your seat, <b>visit</b> this web page and enter your student ID.</li>
+			<li><b>Reminder:</b> you are allowed to bring <b>two</b> standard (A4 or 8.5x11) sheets with handwritten notes on both sides; no other notes or books are allowed; <b>no use of  electronic devices</b> of any kind (phones, smart watches, tablets, calculators) is allowed.</li>
+			<li> Write all your solutions on the exam paper; use the blank back pages if needed. <b>Do not remove any pages</b>.</li>
+			<li> Write your name on top of <b>each</b> exam sheet.</li>
+			</ul><br>
+		    <li><b>Office hours during the exam week</b> (check the Google calendar below and on Professor Au's course web site for updates on time/place of the office hours): 
+		      <ul><li>Sunday, December 8, 2pm-4pm, Professor Au, AP&amp;M 6303</li>
+			<li>Monday, December 9, 1pm-2pm, Professor Au, AP&amp;M 6303</li>
+			<li>Tuesday, December 11, 6pm-8pm, Toni Gui, AP&amp;M 1220</li>
+		      </ul>
+		    <li><b>Practice problems</b> for sections 6,8,9 are available here. Note that the final exam will include problems from all section that were discussed in this course, i.e. sectioins 1,2,3,4,5,6,8,9.</li>
+		    <li><b>Regrades for HW7</b> will be active on Gradescope on Thursday, December 5, 8am-11pm.</li><br>
+		    <li><b>Homework 8</b> is now ready for download (see below). This assignment has 10 problems. You have to turn in only <b>first five</b> of them, and only first five problems will be taken into account for your final grade.  Due date: <b>Friday, December 6, 11:59pm</b>. The solutions to the other problems will be published on this web site later.</li>
+		    <li><b>Results of Midterm 2</b> are now available on Gradescope. The <b>regrade requests</b> will be active on Gradescope on Tuesday, December 3, 8am-11pm. Please, read this <b>short summary</b> of your performance pdf.</li><br>
+		    <li><b>Regrade requests</b> for HW6 will be active on Tuesday, November 26, 8am - 11pm.</li>
+		    <li><b>Homework 7</b> is now ready for download (see below). Due date: <b>WEDNESDAY, November 27, 11:59pm</b>.</li>
+		    <li>The <b>solutions</b> to the second midterm can be founde here.</li>
+		    <li>The link for the <b>anonymous survey</b> is here.
+		    <li><b>Midterm 2</b> will take place on Wednesday, November 20, 9:00am-9:50am in CENTR113.</li><br>
+		    <ul>
+		      <li><b>Important:</b> clearly indicate in the space after the question if a part of your answer is written on one of the blank pages and specify where the grader can find it.</li>
+			<li><b>Important:</b> the <b>seats</b> have been randomly assigned to the students registered for this course. In order to find out your seat, <b>visit</b> this web page and enter your student ID.</li>
+			<li><b>Reminder:</b> you are allowed to bring <b>one</b> standard (A4 or 8.5x11) sheet with handwritten notes on both sides; no other notes or books are allowed; no use of  electronic devices of any kind (phones, smart watches, tablets, calculators) is allowed.</li>
+			<li> Write all your solutions on the exam paper; use the blank back pages if needed.</li>
+			<li> Write your name on top of <b>each</b> exam sheet.</li>
+			</ul><br>
+		    <li><b>Solutions to the practice exams</b> can be found here practiceMidterm2solutions_a.pdf (note that problem 2 was slightly modified: 100 interviewed instead of 250) and practiceMidterm2solutions_b.pdf.
+		    <li><b>Two practice midterm exams</b> are available for download: pdf and pdf (with some additional problems).</li>
+		    <li><b>Regrade requests</b> for HW4 and HW5 will be active on Tuesday, November 19, 8am - 11pm.</li>
+		    <li><b>Homework 6</b> is now available for download (see below). Due date: <b>November 15 11:59pm</b>.</li>
+		    <li><b>Homework 5: error in problem 8 (exercise 4.40)</b> The exact probability that the number one appears at most 3 times is <b>0.00327556</b> and not 0.000949681 as stated in the book.</li>
+		    <li><b>Homework 5</b> is now available for download (see below). Due date: <b>November 8 11:59pm</b>.</li>
+		    <li><b>Regrades of Midterm 1</b> will be active on Gradescope on <b>Wednesday, October 30</b> from 8am to 11pm. Please, check carefully the solutions to Midterm 1 (available here) before requesting a regrade.</li>
+		    <li><b>Results of Midterm 1</b> are now available on Gradescope. You will be notified when the regrade requests are active. It seems like many of you found the exam slightly too difficult, this might be taken into account when computing your final grade. Please, read this short summary of your performance pdf.</li><br>
+		    <li><b>Homework 4</b> is now available for download (see below). Due date: <b>November 1 11:59pm</b>.</li><br>
+		    <li>Mistake in the solution to problem 1(b) in the list of additional practice problems for Midterm 1 has been corrected (see updated slides of lecture 11).</li><br>
+		    <li> <b>Midterm 1</b> will take place on Wednesday, October 23, 9:00am-9:50am in CENTR113.</li><br>
+		    <ul>
+		      <li><b>Important:</b> clearly indicate in the space after the question if a part of your answer is written on one of the blank pages and specify where the grader can find it.</li>
+			<li><b>Important:</b> the <b>seats</b> have been randomly assigned to the students registered for this course. In order to find out your seat, <b>visit</b> this web page and enter your student ID.</li>
+			<li><b>Reminder:</b> you are allowed to bring <b>one</b> standard (A4 or 8.5x11) sheet with handwritten notes on both sides; no other notes or books are allowed; no use of  electronic devices of any kind (phones, smart watches, tablets, calculators) is allowed.</li>
+			<li> Write all your solutions on the exam paper; use the blank back pages if needed.</li>
+			<li> Write your name on top of <b>each</b> exam sheet.</li>
+			</ul><br>
+		    <li> <b>Practice midterm exam #1</b> is now avalable (pdf), as well as a collection of additional problems (<b>Updated</b>: pdf). We will do the practice midterm exam during the lecture on Monday, Oct 21.</li><br>
+		    <li> <b>Regrade requests (homework #2)</b> will be active on Gradescope on <b>Tuesday, October 22 from  8am to  11pm ONLY</b> (after October 22, 11pm the grade will become final). I recall that you should write a <b>separate request for each problem</b>, and your requests should be <b>detailed and polite</b>.</li><br>
+		    <li> <b>Regrade requests (homework #1)</b> will be active on Gradescope on <b>Tuesday, October 15 from  8am to  11pm ONLY</b> (after October 15, 11pm the grade will become final). I recall that you should write a <b>separate request for each problem</b>, and your requests should be <b>detailed and polite</b>.</li><br>
+<!--		<li>New homework problem sheet available now! See below</li>--><br>
+		</ul> 
+	    </p>
+
+ 		<a name="information"><h3>Course Information</h3></a>
+ 		<p>
+ 		<ul>
+		<li><h8>Textbook</h8>: The required textbook for this course is 
+		<br><br>
+		<center><i>Introduction to Probability</i>, by David F. Anderson, Timo Sepp&auml;l&auml;inen, and Benedek Valk&oacute;; DOI 10.1017/9781108235310 </center>
+
+		<br>
+		Reading and homework assignments will refer to this textbook as ASV. </li><br>
+		
+		<li><h8>Coursework</h8>: There will be weekly homework assignments due on Fridays (starting in Week 1); they are posted <a href="#homework">below</a>.
+		There will be two in class midterm exams and a final exam; dates, times, and locations posted <a href="#meetings">below</a>.</li><br>
+		
+		<li><h8><a href="http://piazza.com/ucsd/fall2019/math180alecturea00nemish/home" target="_blank">Piazza</a></h8> is an online discussion forum. It will allow you to post messages (openly or anonymously) and answer posts made by your
+		fellow students, about course content, homework, exams, etc.  The instructors and TAs will also monitor and post to Piazza regularly.
+		You can sign up <a href="https://piazza.com/ucsd/fall2019/math180alecturea00nemish" target="_blank">here</a>. <b>Note:</b> Piazza
+		has an opt-in "Piazza Careers" section which, if you give permission, will share statistics about your Piazza use with
+		potential future employers.  It also has a "social network" component, based on other students who've shared a Piazza-based
+		class with you, that comes with the usual warnings about privacy concerns. Piazza is fully FERPA compliant, and is an allowed resource
+		at UCSD.  Nevertheless, you are not required to use Piazza if you do not wish.</li><br>
+		
+		<li><h8>Gradescope</h8> is an online tool for uploading and grading assignments an exams (it is now under the umbrella of Turnitin).  You will
+		turn in your homework through Gradescope, and you will access your graded exams there as well.  Access the class Gradescope site
+		<a href="http://www.gradescope.com" target="_blank">here</a>.</li>
+
+		</ul>
+		</p>
+
+
+
+		</div>
+
+        <!-- ***********************************************************************
+         *                          INSTRUCTOR INFROMATION
+         * -------------------------------------------------------------------------
+         * Notes: 1. This section contains information about how to contact the 
+         *           Professor. 
+         *************************************************************************-->
+		<div id="instructor1">
+	        <h3>Instructional Staff and Office Hours</h3>
+		</div>
+
+            <table class="bordered">
+               <tbody><tr class="tableHeading"><td>Name</td><td>Role</td><td>Office</td><td>E-mail</td><td>Office hours</td></tr>
+               <tr><td class="tableHeading"><a href="http://www.math.ucsd.edu/~ynemish" target="_blank">Yuriy Nemish</a></td>
+                   <td>Instructor</td>
+                   <td>AP&amp;M 6422</td>
+                 <td><a href="mailto:ynemish@ucsd.edu">ynemish@ucsd.edu</a></td>
+		 <td><ul><li>Tuesday 6:00pm-8:00pm (AP&amp;M 6303)</li>
+		     <li>Thursday 2:00pm-3:00pm (AP&amp;M 6303)</li></ul>
+	       </td></tr>
+               <tr><td class="tableHeading">Toni Gui</td>
+                   <td>Teaching Assistant</td>
+                   <td>AP&amp;M 1220</td>
+                 <td><a href="mailto:ttgui@ucsd.edu">ttgui@ucsd.edu</a></td>
+		 <td><ul><li>Thursday 3:30pm-5:30pm (AP&amp;M 1220)</li></ul></td>
+	       </tr>
+			   <tr><td class="tableHeading"><a href="http://www.math.ucsd.edu/~anying/">Andrew Ying</a></td>
+                   <td>Teaching Assistant</td>
+                   <td>AP&amp;M 1111</td>
+			     <td><a href="mailto:anying@ucsd.edu">anying@ucsd.edu</a></td>
+			     <td><ul><li>Thursday 1:00pm-3:00pm (AP&amp;M 1111)</li></ul></td>
+
+			   </tr>
+             
+            </tbody></table><!-- End table containing contact info -->
+
+        <div id="welcomeMsg">
+	<!-- ><p>We will be communicating with you and making announcements through an online question and answer 
+	platform called 
+        <a href="http://www.piazza.com/ucsd/winter2016/math180a/home" target="_blank" title="Discussion forum for Q&A">Piazza</a> (sign up link:
+        <a href="http://www.piazza.com/ucsd/winter2016/math180a">piazza.com/ucsd/winter2016/math180a</a>).
+	We ask that when you have a question about the class that might be relevant to other students, 
+	you post your question on Piazza instead of emailing us. That way, everyone can benefit from the response.
+	Posts about homework or exams on Piazza should be content based.  While you are encouraged to crowdsource and discuss coursework through
+	Piazza, please do not post complete solutions to homework problems there.  Questions about grades should be brought to the instructors,
+	in office hours.  You can also post private messages to instructors on Piazza, which we prefer to email. 
+	</p> -->
+	<br>
+	<p>Please, check the following calendar for possible reschedulings of the office hours.</p>
+
+
+        <!-- ***********************************************************************
+         *                          CALENDAR LINK
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->
+
+
+		<a name="calendar"><h3>Calendar</h3></a>
+
+		<br>
+
+		<iframe src="https://calendar.google.com/calendar/embed?src=ucsd.edu_fsn4c9c6vg2n6el8fuam683ia0%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		
+<!-- <iframe src="https://calendar.google.com/calendar/embed?src=mb5ld6tn1pm5j20pdstjo59n1o%40group.calendar.google.com&ctz=America/Los_Angeles"
+style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+
+</div>
+
+        <!-- ***********************************************************************
+         *                 CLASS MEETINGS
+         * -------------------------------------------------------------------------
+         * Notes: 1. The class bordered adds a border around the table, if you don't
+         *           like it replace <table class="bordered"> with <table>
+         *        2. When editing the headings, be careful not to accidentally 
+         *           delete a <td> or a </td> tag!
+         *************************************************************************-->
+      
+
+      
+      
+        <div id="middle">
+        <br>
+
+
+            <!-- Class Meeting Information-->
+            <a name="meetings"><h3>Class Meetings</h3></a>
+            <table class="bordered">
+               <tbody><tr class="tableHeading"><td></td><td>Date</td><td>Time</td><td>Location</td></tr>
+               <!-- The lecture date, time, and location -->
+               <tr><td class="tableHeading">Lecture A00 (Nemish)</td>
+                   <td>Monday, Wednesday, Friday</td><td>9:00am - 9:50am</td><td>CENTR 113</td></tr>
+               <!-- The discussion date, time, and location -->
+               <tr><td class="tableHeading">Discussion A01 (Gui)</td>
+                   <td>Monday</td><td>6:00pm - 6:50pm</td><td>CENTR 218</td></tr>
+               <tr><td class="tableHeading">Discussion A02 (Gui)</td>
+                   <td>Monday</td><td>7:00pm - 7:50pm</td><td>CENTR 218</td></tr>
+               <tr><td class="tableHeading">Discussion A03 (Ying)</td>
+                   <td>Monday</td><td>8:00pm - 8:50pm</td><td>CENTR 218</td></tr>
+               <tr><td class="tableHeading">Discussion A04 (Ying)</td>
+                   <td>Monday</td><td>9:00pm - 9:50pm</td><td>CENTR 218</td></tr>
+               <!-- The exam date, time, and location -->
+			   <tr><td class="tableHeading">First Midterm Exam</td>
+                   <td>Wednesday, Oct 23</td><td>9:00am - 9:50am</td><td>CENTR 113</td></tr>
+               <tr><td class="tableHeading">Second Midterm Exam</td>
+                   <td>Wednesday, Nov 20</td><td>9:00am - 9:50am</td><td>CENTR 113</td></tr>
+		  	   <tr><td class="tableHeading">Final Exam</td>
+                   <td>Wednesday, Dec 11</td><td>8:00am - 10:59am</td><td>CENTR 113</td></tr>
+               </tbody></table><!-- End table containing class meeting info -->
+
+
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+
+</div>
+
+	<!-- ***********************************************************************
+         *                    CLASS INFORMATION
+         * -------------------------------------------------------------------------
+         * Notes: 1. This section includes: 
+         *          I.   Welcome Message
+         *          II.  Course Description
+         *          III. Learning goals
+	 *	    IV.  Grading 
+         *          V.  Regrades and accommodations.
+         *          VI.   Academic Integrity
+         *        2. Do not delete the <br/><br/> when editing the text!
+         *************************************************************************-->
+        <div id="welcomeMsg">
+             <a name="syllabus"><h3>Syllabus</h3></a>
+			 <br>             
+             <p>Welcome to Math 180A: a one quarter course introduction to probability theory.  This course is the prerequisite
+             for the subsequent courses Math 180B/C (Introduction to Stochastic Processes) and Math 181A/B (Introduction to Mathematical
+             Statistics) and Math 189 (Exploratory Data Analysis and Inference).  It is also prerequisite for the new Data Science topics
+             course DSC 155 (Hidden Data in Random Matrices) in Winter 2020.  According to the UC San Diego
+             <a href="http://ucsd.edu/catalog/courses/MATH.html" target="_blank">Course Catalog</a>, the topics covered are probability spaces, random variables,
+             independence, conditional probability, discrete and continuous probability distributions, joint distributions, variance and moments,
+             the Laws of Large Numbers, and the Central Limit Theorem.</p>
+             
+             <p>Here is a more detailed listing of course topics, in the sequence they will be covered, together with the relevant section(s) of the
+             textboox.  While each topic corresponds to approximately one lecture, there will be some give and take here.
+
+             
+               <table class="bordered">
+              <tr><th>Date</th><th>Week</th><th>Topic (updated)</th><th>ASV (updated)</th><th>Preliminary slides</th><th>Final slides</th></tr>
+              <tr><td class="tableHeading">09/27</td><td align="center">0</td>
+                   <td>Definition of Probability</td>
+                   <td>1.1</td><td>-</td><td>-</td>
+               <tr><td class="tableHeading">09/30</td><td align="center">1</td>
+                   <td>Random sampling</td>
+                   </td><td>1.2</td><td>-</td><td>-</td>
+               <tr><td class="tableHeading">10/02</td><td align="center">1</td>
+                   <td>Basic Properties of Probability</td>
+                   <td>1.4</td><td>-</td><td>-</td>
+               <tr><td class="tableHeading">10/04</td><td align="center">1</td>
+                   <td>Conditional Probability</td>
+                   <td>2.1</td><td>-</td><td>-</td>
+               <tr><td class="tableHeading">10/07</td><td align="center">2</td>
+                   <td>Bayes' Rule. Independence</td>
+                   <td>2.2-2.3</td><td>-</td><td>-</td>
+               <tr><td class="tableHeading">10/09</td><td align="center">2</td>
+                   <td>Random Variables</td>
+                   <td>1.5, 3.1</td><td>-</td><td>Lecture 6</td>
+               <tr><td class="tableHeading">10/11</td><td align="center">2</td>
+                   <td>Probability Distributions</td>
+                   <td>3.1-3.2</td><td>-</td><td>-</td>
+               <tr><td class="tableHeading">10/14</td><td align="center">3</td>
+                   <td>Independent Trials and Sampling</td>
+                   <td>2.4-2.5</td><td>Lecture 8</td><td>Lecture 8</td>
+               <tr><td class="tableHeading">10/16</td><td align="center">3</td>
+                   <td>Binomial, Geometric, and Poisson Distributions</td>
+                   <td>2.4-2.5, 4.4</td><td>Lecture 9</td><td>Lecture 9</td>
+               <tr><td class="tableHeading">10/18</td><td align="center">3</td>
+                   <td>Expected Value</td>
+                   <td>3.3</td><td>Lecture 10</td><td>Lecture 10</td>
+               <tr><td class="tableHeading">10/21</td><td align="center">4</td>
+                   <td>Review</td>
+                   <td></td><td>Lecture 11</td><td>Lecture 11 (<b>updated</b>)</td>
+               <tr><td class="tableHeading">10/23</td><td align="center">4</td>
+                   <td><b>Midterm 1</b></td>
+                   <td></td>
+               <tr><td class="tableHeading">10/25</td><td align="center">4</td>
+                   <td>Variance</td>
+                   <td>3.4</td><td>Lecture 13</td><td>Lecture 13</td>
+               <tr><td class="tableHeading">10/28</td><td align="center">5</td>
+                   <td>Normal (Gaussian) Distribution</td>
+                   <td>3.5</td><td>Lecture 14</td><td>Lecture 14</td>
+               <tr><td class="tableHeading">10/30</td><td align="center">5</td>
+                   <td>Normal Approximation</td>
+                   <td>4.1-4.2</td><td>Lecture 15</td><td>Lecture 15</td>
+               <tr><td class="tableHeading">11/1</td><td align="center">5</td>
+                   <td>Confidence Intervals</td>
+                   <td>4.3</td><td>Lecture 16</td><td>Lecture 16</td>
+               <tr><td class="tableHeading">11/4</td><td align="center">6</td>
+                   <td>Poisson Approximation</td>
+                   <td>4.4</td><td>Lecture 17</td><td>Lecture 17</td>
+               <tr><td class="tableHeading">11/6</td><td align="center">6</td>
+                   <td>Exponential Distribution</td>
+                   <td>4.5</td><td>Lecture 18</td><td>Lecture 18</td>
+               <tr><td class="tableHeading">11/8</td><td align="center">6</td>
+                   <td>Moment Generating Function</td>
+                   <td>5.1-5.2</td><td>Lecture 19</td><td>Lecture 19</td>
+               <tr><td class="tableHeading">11/11</td><td align="center">7</td>
+                   <td><b>Veterans Day</b></td>
+                   <td></td>
+               <tr><td class="tableHeading">11/13</td><td align="center">7</td>
+                   <td>Joint Distributions</td>
+                   <td>5.2-6.1</td><td>Lecture 20</td><td>Lecture 20</td>
+               <tr><td class="tableHeading">11/15</td><td align="center">7</td>
+                   <td>Joint distrubutions</td>
+                   <td>6.1-6.2</td><td>Lecture 21</td><td>Lecture 21</td>
+               <tr><td class="tableHeading">11/18</td><td align="center">8</td>
+                   <td>Review</td>
+                   <td></td>
+               <tr><td class="tableHeading">11/20</td><td align="center">8</td>
+                   <td><b>Midterm 2</b></td>
+                   <td></td>
+               <tr><td class="tableHeading">11/22</td><td align="center">8</td>
+                   <td>Independence of Random Variables</td>
+                   <td>6.3</td><td>Lecture 22</td><td>Lecture 22</td>
+               <tr><td class="tableHeading">11/25</td><td align="center">9</td>
+                   <td>Expectations of sums and products</td>
+                   <td>8.1-8.3</td><td>Lecture 23</td><td>Lecture 23</td>
+               <tr><td class="tableHeading">11/27</td><td align="center">9</td>
+                   <td>Covariance, correlation, and variance of sums</td>
+                   <td>8.4</td><td>Lecture 24</td><td>Lecture 24</td>
+               <tr><td class="tableHeading">11/29</td><td align="center">9</td>
+                   <td><b>Thanksgiving</b></td>
+                   <td></td>
+               <tr><td class="tableHeading">12/2</td><td align="center">10</td>
+                   <td>Tail probabilities</td>
+                   <td>9.1</td><td>Lecture 25</td><td>Lecture 25</td>
+               <tr><td class="tableHeading">12/4</td><td align="center">10</td>
+                   <td>Law of Large Numbers. Central Limit Theorem</td>
+                   <td>9.2-9.3</td><td>Lecture 26</td><td>Lecture 26</td>
+               <tr><td class="tableHeading">12/6</td><td align="center">10</td>
+                   <td>Review</td>
+                   <td></td>
+             </tbody></table><!-- End table containing contact info -->
+             
+             
+             <p><b>Prerequisite:</b>&nbsp; The only prerequisites are calculus up to and including Math 20C 
+             (Multivariate Calculus). Math 109 (Mathematical Reasoning) is also strongly recommended as a prerequisite or corequisite.</p>
+             
+             <p><b>Lecture:</b>&nbsp;&nbsp;Attending the lecture is a fundamental part of the course; you are
+             responsible for material presented in the lecture <i>whether or not it is discussed in the textbook.</i>
+             You should expect questions on the exams that will test your understanding of concepts discussed in the lecture.
+             </p>
+
+			<p><b>Homework:</b>&nbsp;&nbsp;Homework assignments are posted <a href="#homework">below</a>, and will be due at 11:59pm
+			on the indicated due date.&nbsp;  You must turn in your homework through Gradescope; if you have produced it on paper,
+			you can scan it or simply take clear photos of it to upload.  Your lowest homework score will be dropped.</b>&nbsp;  It is allowed and even
+			encouraged to discuss homework problems with your classmates and your instructor and TA, but your final write up of your
+			homework solutions must be your own work.  
+			</p>
+			
+			<p><b>Midterm Exams:</b>&nbsp;&nbsp;The two midterm exams will take place during the lecture time at the dates listed <a href="#meetings">above</a>.
+			<ul>
+			<li>You may bring <b>one</b> 8.5 by 11 inch sheet of paper with handwritten notes (on both sides) with you to each midterm exam; no other notes (or books)
+			will be allowed.</li>
+			<li>No calculators, phones, or other electronic devices will be allowed during the midterm exams.</li>
+			<li><i><b>There will be no makeup
+ 			midterm exams.</b></i></li>
+			</ul></p>
+
+
+			<p>
+			<b>Final Exam:</b>&nbsp;&nbsp;The final examination will be held at the date and time stated <a href="#meetings">above</a>.
+			<ul>
+			<li>It is your responsibility to ensure that you do not have a schedule conflict involving the final examination; you should not enroll in this class
+			if you cannot take the final examination at its scheduled time.</li>
+			<li>You may bring <b>two</b> 8.5 by 11 inch sheets of paper with handwritten notes (on both sides) with you to the final examination; no other notes (or books)
+			will be allowed.</li>
+			<li>No calculators, phones, or other electronic devices will be allowed during the final examination.</li>
+			<li><i><b>There will be no makeup
+			final exam.</b></i></li>
+			</ul>
+			</p>
+
+
+<p>
+<b>Administrative Links:</b> &nbsp;&nbsp; Here are two links regarding UC San Diego policies on exams:
+<ul>
+<p>
+<li><a href="http://blink.ucsd.edu/instructors/academic-info/exams/responsibilities.html" target="_blank">
+Exam Responsibilities</a>&nbsp; An outline of the responsibilities of faculty and students
+with regard to final exams</li>
+</p>
+<p>
+<li><a href="https://senate.ucsd.edu/operating-procedures/educational-policies/courses/epc-policies-on-courses/policy-exams-including-midterms-final-exams-and-religious-accommodations-for-exams/" target="_blank">
+Policies on Examinations</a>&nbsp; The Academic Senate policy regarding final examinations
+(These are the rules!)</li>
+</p>
+</ul>
+</p>
+
+
+<p>
+<b>Regrade Policy:</b>&nbsp;&nbsp;
+<ul>
+<li>Your exams and homeworks will be graded using <a href="https://gradescope.com/" target="_blank">Gradescope</a>.
+ &nbsp;You will be able to request regrades <b><i>directly from your TA</i></b> through Gradescope for a specified window of time.
+  &nbsp;Be sure to make your request within the specified window of time; no regrade requests will be accepted after the
+   deadline. <b>Note:</b> Your grader will consider your regrade request only if you
+			have explained clearly, thoroughly, and politely why you think an error in grading was made.</li>
+</li></ul>
+</p>
+
+
+<p><b>Grading:</b> 
+
+			Your cumulative average will be the best of the following three weighted averages:
+			<ul>
+    		<li>20% Homework, &nbsp;20% Exam I, &nbsp;20% Exam II, &nbsp;40% Final Exam</li>
+    		<li>20% Homework, &nbsp;20% Best Midterm Exam, &nbsp;&nbsp;&nbsp;&nbsp;60% Final Exam</li>
+		<li>20% Homework, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;80% Final Exam</li>
+			</ul>
+			In addition, &nbsp;<b><i>you must pass the final examination in order to pass the course.</i></b>&nbsp;
+			Note also: there are no makeup exams, if you miss a midterm exam for any reason then your course grade will be computed
+			with the second or third option.  There are no exceptions; this grading scheme is intended to accommodate emergencies
+			that require missing a midterm exam.
+			</p>
+
+
+
+<p>Your course grade will be determined by your cumulative average at the end of the quarter,
+and will be based on the following scale:
+
+<center>        
+<table border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="tableBody"><b>A+</b></td>
+<td class="tableBody"><b>A</b></td>
+<td class="tableBody"><b>A-</b></td>
+<td class="tableBody"><b>B+</b></td>
+<td class="tableBody"><b>B</b></td>
+<td class="tableBody"><b>B-</b></td>
+<td class="tableBody"><b>C+</b></td>
+<td class="tableBody"><b>C</b></td>
+<td class="tableBody"><b>C-</b></td>
+
+</tr>
+<tr>
+<td class="tableBody"><b>97</b></td>
+<td class="tableBody"><b>93</b></td>
+<td class="tableBody"><b>90</b></td>
+<td class="tableBody"><b>87</b></td>
+<td class="tableBody"><b>83</b></td>
+<td class="tableBody"><b>80</b></td>
+<td class="tableBody"><b>77</b></td>
+<td class="tableBody"><b>73</b></td>
+<td class="tableBody"><b>70</b></td>
+
+</tr>
+</tbody>       
+</table>
+</center>
+
+<p>The above scale is guaranteed: for example, if your cumulative average is 80, your final grade will be <i>at least</i> B-. However,
+your instructor may adjust the above scale to be more generous.</p>
+
+
+			
+
+			
+			<p><b>Academic Integrity:</b>&nbsp;&nbsp;UC San Diego's
+			<a href="http://students.ucsd.edu/academics/academic-integrity/index.html" target="_blank">code of academic integrity</a>
+			outlines the expected academic honesty of all studentd and faculty, and details the consequences for academic dishonesty.
+			The main issues are cheating and plagiarism, of course, for which we have a zero-tolerance policy.  (Penalties for these
+			offenses always include assignment of a failing grade in the course, and usually involve an administrative penalty, such
+			as suspension or expulsion, as well.)  However, academic integrity also includes things like giving credit where credit
+			is due (listing your collaborators on homework assignments, noting books or papers containing information you used in
+			solutions, etc.), and treating your peers respectfully in class. In addition, here are a few of our expectations for
+			etiquette in and out of class.</p>
+
+			<ul>
+			<li><b>Entering/exiting class:</b> Please arrive on time and stay for the entire class/section period. If, despite your best
+			efforts, you arrive late, please enter quietly through the rear door and take a seat near where you entered. Similarly, in the
+			rare event that you must leave early (e.g. for a medical appointment), please sit close to the rear exit and leave as
+			unobtrusively as possible.</li>
+			<li><b>Noise and common courtesy:</b> When class/section begins, please stop your conversations. Wait until class/section is
+			over before putting your materials away in your backpack, standing up, or talking to friends. Do not disturb others by engaging
+			in disruptive behavior. Disruption interferes with the learning environment and impairs the ability of others to focus,
+			participate, and engage.</li>
+			<li><b>Electronic devices:</b> Please do not use devices (such as cell phones, laptops, tablets, iPods) for non-class-related
+			matters while in class/section. No visual or audio recording is allowed in class/section without prior permission of the
+			instructor (whether by camera, cell phone, or other means).</li>
+			<li><b>E-mail etiquette:</b> You are expected to write as you would in any professional correspondence. E-mail communication
+			should be courteous and respectful in manner and tone. Please do not send e-mails that are curt or demanding.</li>
+			</ul>
+
+            <p><h4>Accommodations:</h4>
+
+	      Students requesting accommodations for this course due to a disability must provide a current Authorization for Accommodation (AFA) letter issued by the Office for Students with Disabilities (OSD) which is located in University Center 202 behind Center Hall. The AFA letter may be issued by the OSD electronically or in hard-copy; in either case, please make arrangements to discuss your accommodations with me in advance (<b>by the end of Week 2</b>, if possible). We will make every effort to arrange for whatever accommodations are stipulated by the OSD.
+For more information, see 
+			<a href="http://disabilities.ucsd.edu" target="_blank">here</a>. 
+			</p>
+
+
+        <p class="toTop"><a href="#top">Top</a></p><!-- Takes you back to the top of the page -->
+	<br>
+        </div>
+		
+		
+
+        <div id="middle" class="clearer">
+           <a name="homework"><h3>Homework</h3></a>
+           
+           <br>
+           
+           <p>Weekly homework assignments are posted here.  Homework is due by 11:59pm on the posted date, through
+        <a href="http://www.gradescope.com" target="_blank">Gradescope</a>.  Late homework will not be accepted.</p>
+           
+           <ul>
+           <li>Homework 0, due Monday, September 30.</li><br>
+           <li>Homework 1, due Friday, October 4.</li><br>
+	   <li>Homework 2, due Friday, October 11.</li><br>
+	   <li>Homework 3, due Friday, October 18.</li><br>
+	   <li>Homework 4, due Friday, November 1.</li><br>
+	   <li>Homework 5, due Friday, November 8.</li><br>
+	   <li>Homework 6, due Friday, November 15.</li><br>
+	   <li>Homework 7, due <b>WEDNESDAY</b>, November 27.</li><br>
+	   <li>Homework 8, due Friday, December 6.</li><br>
+           </ul>
+	<br>
+		
+		
+
+       </div>
+
+	   
+	   
+	   
+        <!-- ***********************************************************************
+         *                      FOOTER
+         * -------------------------------------------------------------------------
+         * Notes: 1. None
+         *************************************************************************-->	
+         <ul id="footer">
+            <li><a href="http://www.math.ucsd.edu/">Department of Mathematics, UC San Diego</a></li>
+         </ul>		 
+
+     </div><!-- End container div -->
+  </body>
+</html>
